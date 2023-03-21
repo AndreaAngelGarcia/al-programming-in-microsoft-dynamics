@@ -21,7 +21,7 @@ page 50117 AddressProvider
             action(WhatsTheAddress)
             {
                 ApplicationArea = All;
-                Caption = 'What is the Address?';
+                Caption = 'Whats the Address?';
                 ToolTip = 'Select the address.';
                 Image = Addresses;
 

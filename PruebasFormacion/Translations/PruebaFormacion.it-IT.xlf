@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="en-US" original="PruebaFormacion">
+  <file datatype="xml" source-language="en-US" target-language="it-IT" original="PruebaFormacion">
     <body>
       <group id="body">
         <trans-unit id="Table 1828564366 - NamedType 430968699" size-unit="char" translate="yes" xml:space="preserve">
           <source>Esto es un texto global</source>
+          <target>questo è un testo globale<target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - NamedType textoGlobal</note>
         </trans-unit>
@@ -15,6 +16,7 @@
         </trans-unit>
         <trans-unit id="Table 1828564366 - Field 1784619711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Relación cliente</source>
+          <target>rapporto col cliente<target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - Field Camp2 - Property Caption</note>
         </trans-unit>
@@ -35,16 +37,19 @@
         </trans-unit>
         <trans-unit id="Table 842709322 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer Overview</source>
+          <target>panoramica del cliente<target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 842709322 - Field 3310425443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Código de origen</source>
+          <target>codice sorgente<target>
           <note from="Developer" annotates="general" priority="2">Este es el código de origen</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field CodigoOrigen - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 842709322 - Field 2272012708 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Importe</source>
+          <target>quantità<target>
           <note from="Developer" annotates="general" priority="2">Este es el importe</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field Importe - Property Caption</note>
         </trans-unit>

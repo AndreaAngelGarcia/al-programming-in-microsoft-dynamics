@@ -1,23 +1,24 @@
-/*tableextension 50110 CreditLimitExtension extends Customer
+tableextension 50110 CreditLimitExtension extends Customer
 {
-
-    fields
-    {
-
-    }
-
     procedure UpdateCreditLimit(var NewCreditLimit: Decimal)
-
-    var
-        Cust:
     begin
-
+        NewCreditLimit := Round(NewCreditLimit, 10000);
+        Rec.Validate("Credit Limit (LCY)", NewCreditLimit);
+        Rec.Modify();
     end;
 
-    
+    procedure CalculateCreditLimit(): Decimal
+    var
+        Cust: Record Customer;
+    begin
+        Cust := Rec;
+        Cust.SetRange("Date Filter", CalcDate('<-12M>', WorkDate()), WorkDate());
+        Cust.CalcFields("Sales (LCY)", "Balance (LCY)");
+        exit(Round(Cust."Sales (LCY)" * 0.5));
+    end;
 
     var
         myInt: Integer;
-}*/
+}
 
 

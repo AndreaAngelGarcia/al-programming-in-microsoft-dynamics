@@ -5,7 +5,6 @@ page 50113 DateTypesCardPage
     UsageCategory = Administration;
     Caption = 'Tarjeta de tipo de fecha';
 
-
     actions
     {
         area(Processing)
@@ -35,22 +34,14 @@ page 50113 DateTypesCardPage
         Message('The value of %1 is %2', 'Color', Color);
     end;
 
-
     var
         LoopNo: Integer;
         YesOrNo: Boolean;
-
         Amount: Decimal;
-
         "When Was It": Date;
-
         "What Time": Time;
-
         Description: Text[30];
-
         "Code Number": Code[10];
-
         Ch: Char;
-
         Color: Option rojo,naranja,amarrillo,verde,azul,violeta;
 }
