@@ -33,6 +33,8 @@ Tareas:
 
 #####  DateTypesCard.Page.al
 
+![GIF1](recursos/GIF1.gif)
+
 
 #### `Ejercicio: Usar expresiones lógicas y relacionales` 
 Tareas:
@@ -45,6 +47,8 @@ Tareas:
 -> Crear una acción y comprobar si entrada 1 es mayor que entrada 2.
 
 #####  ExpressionsCard.Page.al
+
+![GIF2](recursos/GIF2.gif)
 
 --- 
 
@@ -64,6 +68,8 @@ Tareas:
 
 #####  StatementsCard.Page.al 
 
+![GIF3](recursos/GIF3.gif)
+
 ## Trabajar con funciones integradas de AL en Dynamics 365 Business Central
 
 #### `Ejercicio: Usar funciones integradas`
@@ -80,6 +86,8 @@ Tareas:
 
 #####  ArmstrongCard.Page.al
 
+![FOTO1](recursos/armstrongCard.PNG)
+
 ---
 
 ## Usar eventos y desencadenadores en Dynamics 365 Business Central
@@ -95,6 +103,9 @@ Tareas:
 -> Crear un suscriptor de evento que se suscriba al evento OnBeforeValidate en el campo Dirección de la ficha de cliente.
 
 #####  Validations.CodeUnit.al.
+
+![FOTO2](recursos/validations.PNG)
+
 
 ---
 
@@ -114,6 +125,8 @@ Tareas:
 ##### PrivateAddressProvider.CodeUnit.al
 ##### AddressProvider.Page.al
 
+![GIF1](recursos/GIF4.gif)
+
 --- 
 ## Manipular datos mediante código en Dynamics 365 Business Central
 #### `Ejercicio: Usar instrucciones de manipulación de datos`
@@ -129,6 +142,8 @@ Tareas:
 ##### CustomerOverview.Table.al
 ##### CustomerOverviewList.Page.al
 ##### CustomerOverviewMgmt.CodeUnit.al.
+
+![GIF1](recursos/GIF5.gif)
 
 
 #### `Ejercicio: Funciones personalizadas`
