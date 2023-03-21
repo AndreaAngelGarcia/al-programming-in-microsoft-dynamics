@@ -68,6 +68,11 @@
           <note from="Developer" annotates="general" priority="2">Este es el nombre de clientes</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field NombreCliente - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1057530849 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MyAddress</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AddressProvider - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1057530849 - Action 1306239356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set the interface implementation to Home.</source>
           <note from="Developer" annotates="general" priority="2"></note>

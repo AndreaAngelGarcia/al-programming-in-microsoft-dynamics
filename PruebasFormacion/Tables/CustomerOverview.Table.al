@@ -8,34 +8,34 @@ table 50111 VistaGeneralDelCliente
         field(50110; NMovimiento; Integer)
         {
             Caption = 'Número de movimiento', Comment = 'Este es el número de movimientos';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
 
         }
         field(50111; NCliente; Code[20])
         {
             Caption = 'Número cliente', Comment = 'Este es el número de clientes';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
 
         }
         field(50112; NombreCliente; Text[50])
         {
             Caption = 'Nombre del cliente', Comment = 'Este es el nombre de clientes';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
         field(50113; CodigoOrigen; Code[20])
         {
             Caption = 'Código de origen', Comment = 'Este es el código de origen';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
         field(50114; Importe; Decimal)
         {
             Caption = 'Importe', Comment = 'Este es el importe';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
         field(50115; LastRunDate; DateTime)
         {
             Caption = 'LastRunDate', Comment = 'Este es el LastRunDate';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
     }
 

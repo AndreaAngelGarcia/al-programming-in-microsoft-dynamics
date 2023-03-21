@@ -15,17 +15,19 @@ page 50114 ExpressionesCards
                 field(Value1; Value1)
                 {
                     ApplicationArea = All;
-                    Editable = false;
+                }
+                field(Value2; Value2)
+                {
+                    ApplicationArea = All;
                 }
             }
             group(Salida)
             {
                 Caption = 'Salida';
-                field(Value2; Value2)
+                field(Result; Result)
                 {
                     ApplicationArea = All;
                     Editable = false;
-
                 }
             }
         }

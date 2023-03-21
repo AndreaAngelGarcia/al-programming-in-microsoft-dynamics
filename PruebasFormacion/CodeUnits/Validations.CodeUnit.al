@@ -16,6 +16,4 @@ codeunit 50111 Validations
     begin
         Message('%1', StrPos(TextToVerify, '+'));
     end;
-
-
 }

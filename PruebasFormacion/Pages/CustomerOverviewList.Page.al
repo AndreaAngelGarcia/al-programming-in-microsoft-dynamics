@@ -67,8 +67,7 @@ page 50112 ListaDeVistaGeneralDeCliente
                     UpdateCustomerOverview: Codeunit AdministracionGeneralDeCliente;
 
                 begin
-
-
+                    UpdateCustomerOverview.Run();
                 end;
 
             }

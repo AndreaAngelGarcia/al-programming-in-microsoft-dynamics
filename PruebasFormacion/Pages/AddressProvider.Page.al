@@ -3,6 +3,7 @@ page 50117 AddressProvider
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
+    Caption = 'MyAddress';
 
     layout
     {
