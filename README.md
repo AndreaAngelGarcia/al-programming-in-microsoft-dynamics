@@ -125,7 +125,7 @@ Tareas:
 ##### PrivateAddressProvider.CodeUnit.al
 ##### AddressProvider.Page.al
 
-![GIF1](recursos/GIF4.gif)
+![GIF4](recursos/GIF4.gif)
 
 --- 
 ## Manipular datos mediante código en Dynamics 365 Business Central
@@ -143,8 +143,21 @@ Tareas:
 ##### CustomerOverviewList.Page.al
 ##### CustomerOverviewMgmt.CodeUnit.al.
 
-![GIF1](recursos/GIF5.gif)
+![GIF5](recursos/GIF5.gif)
 
+
+#### `Ejercicio: Funciones personalizadas`
+Tareas:
+-> Crear una nueva extensión.
+
+-> Crear una extensión de tabla.
+
+-> Crear una extensión de página.
+
+##### CreditLimitExtension.TableExt.al
+##### CreditLimitExtension.PageExt.al.
+
+![GIF6](recursos/GIF6.gif)
 
 #### `Ejercicio: Funciones personalizadas`
 Tareas:
