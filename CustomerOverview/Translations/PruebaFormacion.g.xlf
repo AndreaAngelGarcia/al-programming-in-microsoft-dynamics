@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="PruebaFormacion">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 842709322 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Overview</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 842709322 - Field 3310425443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Código de origen</source>
+          <note from="Developer" annotates="general" priority="2">Este es el código de origen</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field CodigoOrigen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 842709322 - Field 2272012708 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Importe</source>
+          <note from="Developer" annotates="general" priority="2">Este es el importe</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field Importe - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 842709322 - Field 2578636657 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LastRunDate</source>
+          <note from="Developer" annotates="general" priority="2">Este es el LastRunDate</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field LastRunDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 842709322 - Field 3507253038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Número cliente</source>
+          <note from="Developer" annotates="general" priority="2">Este es el número de clientes</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field NCliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 842709322 - Field 3215501593 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Número de movimiento</source>
+          <note from="Developer" annotates="general" priority="2">Este es el número de movimientos</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field NMovimiento - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 842709322 - Field 2726740135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nombre del cliente</source>
+          <note from="Developer" annotates="general" priority="2">Este es el nombre de clientes</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field NombreCliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 908510428 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Overview List Andrea</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListaDeVistaGeneralDeCliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 908510428 - Action 3393963675 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListaDeVistaGeneralDeCliente - Action EliminarRegistros - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 908510428 - Action 4186204958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete All Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListaDeVistaGeneralDeCliente - Action EliminarTodosLosRegistros - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 908510428 - Action 505973210 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListaDeVistaGeneralDeCliente - Action ImportarRegistros - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 908510428 - Action 151992076 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Modify Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListaDeVistaGeneralDeCliente - Action ModificarRegistros - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 908510428 - Action 3602182505 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Report</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListaDeVistaGeneralDeCliente - Action PrintReport - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
