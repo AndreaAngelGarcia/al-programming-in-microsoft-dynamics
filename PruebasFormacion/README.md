@@ -35,7 +35,7 @@ Tareas:
 
 #####  DateTypesCard.Page.al
 
-![GIF1](recursos/GIF1.gif)
+![GIF1](../recursos/GIF1.gif)
 
 
 #### `Ejercicio: Usar expresiones lógicas y relacionales` 
@@ -50,7 +50,7 @@ Tareas:
 
 #####  ExpressionsCard.Page.al
 
-![GIF2](recursos/GIF2.gif)
+![GIF2](../recursos/GIF2.gif)
 
 --- 
 
@@ -70,7 +70,7 @@ Tareas:
 
 #####  StatementsCard.Page.al 
 
-![GIF3](recursos/GIF3.gif)
+![GIF3](../recursos/GIF3.gif)
 
 ## Trabajar con funciones integradas de AL en Dynamics 365 Business Central
 
@@ -88,7 +88,7 @@ Tareas:
 
 #####  ArmstrongCard.Page.al
 
-![FOTO1](recursos/armstrongCard.PNG)
+![FOTO1](../recursos/armstrongCard.PNG)
 
 ---
 
@@ -106,7 +106,7 @@ Tareas:
 
 #####  Validations.CodeUnit.al.
 
-![FOTO2](recursos/validations.PNG)
+![FOTO2](../recursos/validations.PNG)
 
 
 ---
@@ -127,7 +127,7 @@ Tareas:
 ##### PrivateAddressProvider.CodeUnit.al
 ##### AddressProvider.Page.al
 
-![GIF4](recursos/GIF4.gif)
+![GIF4](../recursos/GIF4.gif)
 
 --- 
 ## Manipular datos mediante código en Dynamics 365 Business Central
@@ -145,7 +145,7 @@ Tareas:
 ##### CustomerOverviewList.Page.al
 ##### CustomerOverviewMgmt.CodeUnit.al.
 
-![GIF5](recursos/GIF5.gif)
+![GIF5](../recursos/GIF5.gif)
 
 
 #### `Ejercicio: Funciones personalizadas`
@@ -159,7 +159,7 @@ Tareas:
 ##### CreditLimitExtension.TableExt.al
 ##### CreditLimitExtension.PageExt.al.
 
-![GIF6](recursos/GIF6.gif)
+![GIF6](../recursos/GIF6.gif)
 
 #### `Ejercicio: Funciones personalizadas`
 Tareas:
