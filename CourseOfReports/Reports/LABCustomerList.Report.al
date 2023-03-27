@@ -30,21 +30,21 @@ report 50500 LABCustomerList
         layout(Example_RDLCLayout)
         {
             Type = RDLC;
-            LayoutFile = './Rld/LABCustomerList.rdl';
+            LayoutFile = './Rdl/LABCustomerList.rdl';
             Caption = 'LABCustomerList';
             Summary = 'An example of an RDLC Layout.';
         }
         layout(Example_WORDLayout)
         {
             Type = Word;
-            LayoutFile = './Rld/Example_WORDLayout.docx';
+            LayoutFile = './Rdl/Example_WORDLayout.docx';
             Caption = 'LABCustomerList';
             Summary = 'An example of an WORD Layout.';
         }
         layout(Example_EXCELLayout)
         {
             Type = Excel;
-            LayoutFile = './Rld/Example_EXCELLayout.xlsx';
+            LayoutFile = './Rdl/Example_EXCELLayout.xlsx';
             Caption = 'LABCustomerList';
             Summary = 'An example of an Excel Layout.';
         }
