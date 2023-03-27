@@ -1,6 +1,6 @@
 report 50500 LABCustomerList
 {
-    Caption = 'LAB CustomerList';
+    Caption = 'LAB CustomerList Andrea';
     ApplicationArea = All;
     UsageCategory = ReportsAndAnalysis;
     PreviewMode = Normal;
@@ -10,8 +10,6 @@ report 50500 LABCustomerList
     {
         dataitem(Customer; Customer)
         {
-            DataItemTableView = sorting(Name);
-
             column(No; "No.")
             {
                 IncludeCaption = true;
