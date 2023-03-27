@@ -85,8 +85,8 @@ page 50112 ListaDeVistaGeneralDeCliente
                             Message('No se puede modificar uno de los clientes seleccionados porque tiene un importe negativo');
                         end else begin
                             if Customer.get(CustomerOverview.NCliente) then begin
-                                Customer.Name := 'Javier Martinez Adios';
-                                CustomerOverview.NombreCliente := 'Javier Martinez Adios';
+                                Customer.Name := 'Javier Martinez';
+                                CustomerOverview.NombreCliente := 'Javier Martinez';
                                 CustomerOverview.Modify(true);
                                 Customer.Modify(true);
                             end;
