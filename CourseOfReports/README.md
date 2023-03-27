@@ -4,9 +4,9 @@
 ## PROGRAMACIÓN AL 💻
 
 
-### `Aprenda sobre la base de aplicaciones con el lenguaje de programación AL para Microsoft Dynamics 365 Business Central`
+### `Crear informes para Microsoft Dynamics 365 Business Central`
 
-- Introducción a los fundamentos de la programación AL en Dynamics 365 Business Central.
+- Introducción a los componentes de informe en Dynamics 365 Business Central.
 - Aprenda las instrucciones de AL en Dynamics 365 Business Central
 - Trabajar con funciones integradas de AL en Dynamics 365 Business Central
 - Gestionar errores usando el lenguaje de la aplicación en Dynamics 365 Business Central
@@ -21,21 +21,27 @@
 ---
 
 
-## Introducción a los fundamentos de la programación AL en Dynamics 365 Business Central.
+## Agregar un diseño a un informe en Dynamics 365 Business Central
 
-#### `Ejercicio: Descubrir los tipos de datos intrínsecos`:
-Tareas: 
--> Crear una nueva extensión AL.
+#### `Ejercicio: Crear un informe básico`:
+Tareas
+-> Crear la extensión de página.
 
--> Crear una nueva página de ficha.
+-> Crear el conjunto de datos.
 
--> Crear variables globales.
+-> Crear un diseño RDLC para el informe.
 
--> Mostrar los valores de las variables en un cuadro de mensaje.
+-> Crear un diseño de Word para el informe.
 
-#####  DateTypesCard.Page.al
+-> Crear un diseño Excel para el informe.
+
+
+#####  CustomerList.Page.al
 
 ![GIF1](../recursos/GIF1.gif)
+
+
+---
 
 
 #### `Ejercicio: Usar expresiones lógicas y relacionales` 
@@ -111,21 +117,7 @@ Tareas:
 
 ---
 
-## Implementar interfaces en Dynamics 365 Business Central
-#### `Ejercicio: Crear una interfaz`
-Tareas:
--> Crear una interfaz.
 
--> Crear dos codeunits que implementen la interfaz.
-
--> Crear una página con una acción que pruebe la interfaz.
-
--> Crear una enumeración para admitir la inicialización de la interfaz.
-
-##### AddressProvider.al
-##### CompanyAdressProvider.CodeUnit.al
-##### PrivateAddressProvider.CodeUnit.al
-##### AddressProvider.Page.al
 
 ![GIF4](../recursos/GIF4.gif)
 
