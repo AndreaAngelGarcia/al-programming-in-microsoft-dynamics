@@ -1,7 +1,4 @@
-# MICROSOFT DYNAMICS 📊📈
-
-
-## PROGRAMACIÓN AL 💻
+# EJERCICIOS MICROSOFT DYNAMICS 💻📊
 
 
 - Actualizar la información de los Customer Overview seleccionados (en Customer de verdad, los campos que queráis)
