@@ -3,60 +3,60 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="PruebaFormacion">
     <body>
       <group id="body">
-        <trans-unit id="Table 1828564366 - NamedType 430968699" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2451457446 - NamedType 430968699" size-unit="char" translate="yes" xml:space="preserve">
           <source>Esto es un texto global</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - NamedType textoGlobal</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tableAndrea - NamedType textoGlobal</note>
         </trans-unit>
-        <trans-unit id="Table 1828564366 - Field 3697709562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2451457446 - Field 3697709562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Camp1</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - Field Camp1 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tableAndrea - Field Camp1 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1828564366 - Field 1784619711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2451457446 - Field 1784619711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Relación cliente</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - Field Camp2 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tableAndrea - Field Camp2 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1828564366 - Field 2422316328 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2451457446 - Field 2422316328 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Camp3</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - Field Camp3 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tableAndrea - Field Camp3 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1828564366 - Field 1315832117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2451457446 - Field 1315832117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Camp4</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - Field Camp4 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tableAndrea - Field Camp4 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1828564366 - Field 1953528734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 2451457446 - Field 1953528734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Camp5</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tablaEjemploAndrea - Field Camp5 - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PTE tableAndrea - Field Camp5 - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1062137700 - Control 3259860252 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3898034734 - Control 3259860252 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaFichaAndrea - Control GrupoNuevo - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CardPageAndrea - Control GrupoNuevo - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1062137700 - Control 1972568807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3898034734 - Control 1972568807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaFichaAndrea - Control Otros - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CardPageAndrea - Control Otros - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1062137700 - Action 777668356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3898034734 - Action 777668356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Acción nueva en ficha</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaFichaAndrea - Action AccionNueva - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CardPageAndrea - Action AccionNueva - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2061323730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2199879976 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Página de registros Andrea</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaListaAndrea - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListPageAndrea - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2061323730 - Action 777668356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2199879976 - Action 777668356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Acción nueva</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PaginaListaAndrea - Action AccionNueva - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ListPageAndrea - Action AccionNueva - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2332879672 - Action 4069333574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4194195770">
           <source>Acción nueva</source>
