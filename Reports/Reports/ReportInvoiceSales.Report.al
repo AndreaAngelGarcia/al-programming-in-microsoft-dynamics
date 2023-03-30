@@ -29,7 +29,16 @@ report 50501 InvoiceSales
 
             }
         }
+        dataitem(DataItemName; SourceTableName)
+        {
+            column(ColumnName; SourceFieldName)
+            {
+
+            }
+        }
     }
+
+
 
     requestpage
     {

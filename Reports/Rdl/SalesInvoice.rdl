@@ -70,20 +70,23 @@ End Function
         <Field Name="Description">
           <DataField>Description</DataField>
         </Field>
-        <Field Name="Budgeted_Amount">
-          <DataField>Budgeted_Amount</DataField>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
         </Field>
-        <Field Name="Budgeted_AmountFormat">
-          <DataField>Budgeted_AmountFormat</DataField>
+        <Field Name="AmountFormat">
+          <DataField>AmountFormat</DataField>
         </Field>
-        <Field Name="Price_Includes_VAT">
-          <DataField>Price_Includes_VAT</DataField>
+        <Field Name="Unit_Price">
+          <DataField>Unit_Price</DataField>
         </Field>
-        <Field Name="Profit__">
-          <DataField>Profit__</DataField>
+        <Field Name="Unit_PriceFormat">
+          <DataField>Unit_PriceFormat</DataField>
         </Field>
-        <Field Name="Profit__Format">
-          <DataField>Profit__Format</DataField>
+        <Field Name="Line_Amount">
+          <DataField>Line_Amount</DataField>
+        </Field>
+        <Field Name="Line_AmountFormat">
+          <DataField>Line_AmountFormat</DataField>
         </Field>
       </Fields>
       <Query>
