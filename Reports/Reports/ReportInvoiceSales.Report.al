@@ -6,39 +6,69 @@ report 50501 InvoiceSales
 
     dataset
     {
-        dataitem("Sales Line"; "Sales Line")
+        dataitem(SalesHeader; "Sales Header")
         {
-            column(No_; "No.")
+            column(NDoc; "No.")
             {
 
             }
-            column(Description; Description)
+            column(FechaRegistro; "Posting Date")
             {
 
             }
-            column(Amount; Amount)
+
+            column(NombreCliente; "Sell-to Customer Name")
             {
 
             }
-            column(Unit_Price; "Unit Price")
+
+            column(NumeroCliente; "Sell-to Customer No.")
             {
 
             }
-            column(Line_Amount; "Line Amount")
+            column(MetodoPago; "Shipment Method Code")
             {
 
             }
-        }
-        dataitem(DataItemName; SourceTableName)
-        {
-            column(ColumnName; SourceFieldName)
+
+            dataitem("Sales Line"; "Sales Line")
             {
+                DataItemLinkReference = SalesHeader;
+                DataItemLink = "Bill-to Customer No." = field("Bill-to Customer No.");
+                column(CódigoProducto; "No.")
+                {
+
+                }
+                column(Descripción; Description)
+                {
+
+                }
+                column(Cantidad; Amount)
+                {
+
+                }
+                column(Precio; "Unit Price")
+                {
+
+                }
+                column(ImporteLinea; "Line Amount")
+                {
+
+                }
+
+                column(BaseImponible; "VAT Base Amount")
+                {
+
+                }
+
+                column(VAT__; "VAT %")
+                {
+
+                }
 
             }
         }
     }
-
-
 
     requestpage
     {
