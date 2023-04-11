@@ -15,11 +15,11 @@ pageextension 50503 InvoiceSales extends "Sales Invoice List"
 
                 trigger OnAction()
                 var
-                    SalesLine: Record "Sales Header";
+                    Header: Record "Sales Header";
                 begin
-                    SalesLine.Reset();
-                    CurrPage.SetSelectionFilter(SalesLine);
-                    Report.Run(Report::InvoiceSales);
+                    Header.Reset();
+                    CurrPage.SetSelectionFilter(Header);
+                    Report.Run(Report::InvoiceSales, true, true, Header);
                 end;
             }
         }

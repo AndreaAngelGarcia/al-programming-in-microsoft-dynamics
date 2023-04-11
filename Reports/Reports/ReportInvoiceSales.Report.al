@@ -2,7 +2,7 @@ report 50501 InvoiceSales
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    DefaultRenderingLayout = LayoutName;
+    DefaultRenderingLayout = RDLC;
 
     dataset
     {
@@ -26,7 +26,29 @@ report 50501 InvoiceSales
             {
 
             }
-            column(MetodoPago; "Shipment Method Code")
+
+            column(Direccion; "Bill-to Address")
+            {
+
+            }
+
+            column(Ciudad; "Bill-to City")
+            {
+
+            }
+
+            column(CodigoPostal; "Bill-to Post Code")
+            {
+
+            }
+
+            // MÉTODO DE PAGO Y VENCIMIENTOS
+            column(MetodoPago; "Payment Method Code")
+            {
+
+            }
+
+            column(Vencimientos; "Due Date")
             {
 
             }
@@ -39,29 +61,43 @@ report 50501 InvoiceSales
                 {
 
                 }
-                column(Descripción; Description)
+                column(Description; Description)
                 {
 
                 }
-                column(Cantidad; Amount)
-                {
-
-                }
-                column(Precio; "Unit Price")
-                {
-
-                }
-                column(ImporteLinea; "Line Amount")
+                column(Amount; Amount)
                 {
 
                 }
 
+                column(Quantity; Quantity)
+                {
+
+                }
+                column(Unit_Price; "Unit Price")
+                {
+
+                }
+                column(Importe; "Line Amount")
+                {
+
+                }
                 column(BaseImponible; "VAT Base Amount")
                 {
 
                 }
 
+                column(Cuota; "Amount Including VAT" - "VAT Base Amount")
+                {
+
+                }
+
                 column(VAT__; "VAT %")
+                {
+
+                }
+
+                column(Amount_Including_VAT; "Amount Including VAT")
                 {
 
                 }
@@ -98,7 +134,7 @@ report 50501 InvoiceSales
 
     rendering
     {
-        layout(LayoutName)
+        layout(RDLC)
         {
             Type = RDLC;
             LayoutFile = 'Rdl/SalesInvoice.rdl';
