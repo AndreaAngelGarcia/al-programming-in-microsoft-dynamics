@@ -1,4 +1,4 @@
-table 50111 VistaGeneralDelCliente
+table 50111 CustomerOverviewAndrea
 {
     DataClassification = CustomerContent;
     Caption = 'Customer Overview';
@@ -67,5 +67,4 @@ table 50111 VistaGeneralDelCliente
     begin
 
     end;
-
 }

@@ -3,40 +3,40 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="PruebaFormacion">
     <body>
       <group id="body">
-        <trans-unit id="Table 842709322 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 4261512598 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer Overview</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CustomerOverviewAndrea - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 842709322 - Field 3310425443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 4261512598 - Field 3310425443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Código de origen</source>
           <note from="Developer" annotates="general" priority="2">Este es el código de origen</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field CodigoOrigen - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CustomerOverviewAndrea - Field CodigoOrigen - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 842709322 - Field 2272012708 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 4261512598 - Field 2272012708 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Importe</source>
           <note from="Developer" annotates="general" priority="2">Este es el importe</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field Importe - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CustomerOverviewAndrea - Field Importe - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 842709322 - Field 2578636657 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 4261512598 - Field 2578636657 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>LastRunDate</source>
           <note from="Developer" annotates="general" priority="2">Este es el LastRunDate</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field LastRunDate - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CustomerOverviewAndrea - Field LastRunDate - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 842709322 - Field 3507253038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 4261512598 - Field 3507253038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Número cliente</source>
           <note from="Developer" annotates="general" priority="2">Este es el número de clientes</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field NCliente - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CustomerOverviewAndrea - Field NCliente - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 842709322 - Field 3215501593 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 4261512598 - Field 3215501593 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Número de movimiento</source>
           <note from="Developer" annotates="general" priority="2">Este es el número de movimientos</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field NMovimiento - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CustomerOverviewAndrea - Field NMovimiento - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 842709322 - Field 2726740135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 4261512598 - Field 2726740135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nombre del cliente</source>
           <note from="Developer" annotates="general" priority="2">Este es el nombre de clientes</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table VistaGeneralDelCliente - Field NombreCliente - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CustomerOverviewAndrea - Field NombreCliente - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 908510428 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course Overview List Andrea</source>

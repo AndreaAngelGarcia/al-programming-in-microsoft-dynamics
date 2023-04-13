@@ -52,7 +52,7 @@ codeunit 50110 "AdministracionGeneralDeCliente"
 
     var
         myInt: Integer;
-        CustomerOverview: Record VistaGeneralDelCliente;
+        CustomerOverview: Record CustomerOverviewAndrea;
         Customer: Record Customer;
         SourceCode: Record "Source Code";
         GLEntry: Record "G/L Entry";

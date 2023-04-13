@@ -3,7 +3,7 @@ page 50118 CustomerOverviewCard
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = VistaGeneralDelCliente;
+    SourceTable = CustomerOverviewAndrea;
 
     layout
     {

@@ -3,7 +3,7 @@ page 50112 ListaDeVistaGeneralDeCliente
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = VistaGeneralDelCliente;
+    SourceTable = CustomerOverviewAndrea;
     Caption = 'Course Overview List Andrea';
     Editable = false;
     CardPageId = CustomerOverviewCard;
@@ -75,7 +75,7 @@ page 50112 ListaDeVistaGeneralDeCliente
                 trigger OnAction();
 
                 var
-                    CustomerOverview: Record VistaGeneralDelCliente;
+                    CustomerOverview: Record CustomerOverviewAndrea;
                     Customer: Record Customer;
                 begin
                     CurrPage.SetSelectionFilter(CustomerOverview);
@@ -85,8 +85,8 @@ page 50112 ListaDeVistaGeneralDeCliente
                             Message('No se puede modificar uno de los clientes seleccionados porque tiene un importe negativo');
                         end else begin
                             if Customer.get(CustomerOverview.NCliente) then begin
-                                Customer.Name := 'Javier Martinez';
-                                CustomerOverview.NombreCliente := 'Javier Martinez';
+                                Customer.Name := 'Andrea Angel Gomez';
+                                CustomerOverview.NombreCliente := 'Andrea Angel Gomez';
                                 CustomerOverview.Modify(true);
                                 Customer.Modify(true);
                             end;
@@ -104,12 +104,12 @@ page 50112 ListaDeVistaGeneralDeCliente
                 trigger OnAction();
 
                 var
-                    CustomerOverview: Record VistaGeneralDelCliente;
+                    CustomerOverview: Record CustomerOverviewAndrea;
                 begin
                     CurrPage.SetSelectionFilter(CustomerOverview);
                     while CustomerOverview.Next() <> 0 do begin
                         if CustomerOverview.Importe < 0 then begin
-                            ERROR('No se puede borrar uno de los clientes seleccionados porque tiene un importe negativo');
+                            ERROR('No se puede borrar uno de los clientes seleccionados porque tiene un importe negativo.');
                         end
                         else begin
                             CustomerOverview.Delete(true);
@@ -127,7 +127,7 @@ page 50112 ListaDeVistaGeneralDeCliente
                 trigger OnAction();
 
                 var
-                    CustomerOverview: Record VistaGeneralDelCliente;
+                    CustomerOverview: Record CustomerOverviewAndrea;
                 begin
 
                     CustomerOverview.DeleteAll();
@@ -143,9 +143,9 @@ page 50112 ListaDeVistaGeneralDeCliente
                 trigger OnAction();
 
                 var
-                    CustomerOverview: Record VistaGeneralDelCliente;
+                    CustomerOverview: Record CustomerOverviewAndrea;
                 begin
-                    //report.Run(Report::LABCustomerList);
+                    report.Run(Report::CustomerOverviewReport);
                 end;
             }
         }

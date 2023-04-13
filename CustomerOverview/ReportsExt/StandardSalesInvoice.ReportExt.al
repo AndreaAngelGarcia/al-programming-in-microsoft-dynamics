@@ -15,7 +15,7 @@ reportextension 50110 StandardSalesInvoice extends "Standard Sales - Invoice"
         layout(LayoutName)
         {
             Type = RDLC;
-            LayoutFile = 'mylayout.rdl';
+            LayoutFile = 'RdlExt/mylayout.rdl';
         }
     }
 }
