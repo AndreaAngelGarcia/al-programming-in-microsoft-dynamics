@@ -3,7 +3,6 @@
 
 ## EJERCICIOS REPORTS 💻
 
----
 ###   Opción A:
       1. Informe de factura de venta en RDL Layout.
       2. Informe de factura de compra en Word Layout.
