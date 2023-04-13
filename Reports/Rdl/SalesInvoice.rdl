@@ -1892,7 +1892,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Descuento.Value</Value>
+                                  <Value>=IIf(Fields!Descuento.Value  = 0, " ", Fields!Descuento.Value)</Value>
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                   </Style>
