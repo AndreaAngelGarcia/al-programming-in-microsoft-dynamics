@@ -58,6 +58,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ListPageAndrea - Action AccionNueva - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2028547499 - Action 4107840117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 561208485">
+          <source>Factura Andrea</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension InvoiceSales - Action FacturaAndrea - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2332879672 - Action 4069333574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4194195770">
           <source>Acción nueva</source>
           <note from="Developer" annotates="general" priority="2"></note>

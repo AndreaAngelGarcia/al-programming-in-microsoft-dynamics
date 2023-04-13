@@ -12,7 +12,7 @@ report 50501 InvoiceSales
             {
 
             }
-            column(FechaRegistro; "Posting Date")
+            column(FechaRegistro; Format("Posting Date", 0, '<Closing><Day,2>-<Month,2>-<Year>'))
             {
 
             }
@@ -48,7 +48,7 @@ report 50501 InvoiceSales
 
             }
 
-            column(Vencimientos; "Due Date")
+            column(Vencimientos; Format("Due Date", 0, '<Closing><Day,2>-<Month,2>-<Year>'))
             {
 
             }
@@ -57,24 +57,23 @@ report 50501 InvoiceSales
             {
                 DataItemLinkReference = SalesHeader;
                 DataItemLink = "Bill-to Customer No." = field("Bill-to Customer No.");
-                column(CódigoProducto; "No.")
+                column(CodigoProducto; "No.")
                 {
 
                 }
-                column(Description; Description)
+                column(Descripcion; Description)
                 {
 
                 }
-                column(Amount; Amount)
+                column(Cantidad; Quantity)
                 {
 
                 }
-
-                column(Quantity; Quantity)
+                column(Precio; "Unit Price")
                 {
 
                 }
-                column(Unit_Price; "Unit Price")
+                column(Descuento; "Line Discount %")
                 {
 
                 }
@@ -92,7 +91,7 @@ report 50501 InvoiceSales
 
                 }
 
-                column(VAT__; "VAT %")
+                column(IVA; "VAT %")
                 {
 
                 }
@@ -101,12 +100,6 @@ report 50501 InvoiceSales
                 {
 
                 }
-
-                column(Line_Discount__; "Line Discount %")
-                {
-
-                }
-
                 column(Unit_Volume; "Unit Volume")
                 {
 

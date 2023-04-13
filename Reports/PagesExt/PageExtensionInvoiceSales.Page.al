@@ -9,9 +9,11 @@ pageextension 50503 InvoiceSales extends "Sales Invoice List"
     {
         addafter(Reports)
         {
-            action(Prueba)
+            action(FacturaAndrea)
             {
                 ApplicationArea = All;
+                Caption = 'Factura Andrea';
+                Image = Report2;
 
                 trigger OnAction()
                 var
