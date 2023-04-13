@@ -11,6 +11,103 @@
       <rd:DataSourceID>04197384-6cc7-447c-bdec-42136091fb71</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="NDoc">
+          <DataField>NDoc</DataField>
+        </Field>
+        <Field Name="FechaRegistro">
+          <DataField>FechaRegistro</DataField>
+        </Field>
+        <Field Name="NombreCliente">
+          <DataField>NombreCliente</DataField>
+        </Field>
+        <Field Name="NumeroCliente">
+          <DataField>NumeroCliente</DataField>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+        </Field>
+        <Field Name="Ciudad">
+          <DataField>Ciudad</DataField>
+        </Field>
+        <Field Name="CodigoPostal">
+          <DataField>CodigoPostal</DataField>
+        </Field>
+        <Field Name="MetodoPago">
+          <DataField>MetodoPago</DataField>
+        </Field>
+        <Field Name="Vencimientos">
+          <DataField>Vencimientos</DataField>
+        </Field>
+        <Field Name="CodigoProducto">
+          <DataField>CodigoProducto</DataField>
+        </Field>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+        </Field>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+        </Field>
+        <Field Name="CantidadFormat">
+          <DataField>CantidadFormat</DataField>
+        </Field>
+        <Field Name="Precio">
+          <DataField>Precio</DataField>
+        </Field>
+        <Field Name="PrecioFormat">
+          <DataField>PrecioFormat</DataField>
+        </Field>
+        <Field Name="Descuento">
+          <DataField>Descuento</DataField>
+        </Field>
+        <Field Name="DescuentoFormat">
+          <DataField>DescuentoFormat</DataField>
+        </Field>
+        <Field Name="Importe">
+          <DataField>Importe</DataField>
+        </Field>
+        <Field Name="ImporteFormat">
+          <DataField>ImporteFormat</DataField>
+        </Field>
+        <Field Name="BaseImponible">
+          <DataField>BaseImponible</DataField>
+        </Field>
+        <Field Name="BaseImponibleFormat">
+          <DataField>BaseImponibleFormat</DataField>
+        </Field>
+        <Field Name="Cuota">
+          <DataField>Cuota</DataField>
+        </Field>
+        <Field Name="CuotaFormat">
+          <DataField>CuotaFormat</DataField>
+        </Field>
+        <Field Name="IVA">
+          <DataField>IVA</DataField>
+        </Field>
+        <Field Name="IVAFormat">
+          <DataField>IVAFormat</DataField>
+        </Field>
+        <Field Name="Amount_Including_VAT">
+          <DataField>Amount_Including_VAT</DataField>
+        </Field>
+        <Field Name="Amount_Including_VATFormat">
+          <DataField>Amount_Including_VATFormat</DataField>
+        </Field>
+        <Field Name="Unit_Volume">
+          <DataField>Unit_Volume</DataField>
+        </Field>
+        <Field Name="Unit_VolumeFormat">
+          <DataField>Unit_VolumeFormat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2055,7 +2152,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox15</rd:DefaultName>
-              <Top>3.67453cm</Top>
+              <Top>3.03953cm</Top>
               <Left>2.49499cm</Left>
               <Height>0.84667cm</Height>
               <Width>9.03724cm</Width>
@@ -2080,7 +2177,7 @@
                       <Value>OCA GLOBAL</Value>
                       <Style>
                         <FontFamily>Cambria</FontFamily>
-                        <FontSize>18pt</FontSize>
+                        <FontSize>22pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -2091,9 +2188,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox25</rd:DefaultName>
-              <Top>2.08745cm</Top>
+              <Top>0.79967cm</Top>
               <Left>14.28683cm</Left>
-              <Height>0.86459cm</Height>
+              <Height>1.12904cm</Height>
               <Width>4.68723cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
@@ -2114,7 +2211,11 @@
                   <TextRuns>
                     <TextRun>
                       <Value>OCA Global Corporate Services S.A</Value>
-                      <Style />
+                      <Style>
+                        <FontFamily>Bahnschrift</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -2123,9 +2224,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox26</rd:DefaultName>
-              <Top>3.19858cm</Top>
+              <Top>2.01677cm</Top>
               <Left>13.65183cm</Left>
-              <Height>0.58249cm</Height>
+              <Height>0.68792cm</Height>
               <Width>6.22181cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
@@ -2146,7 +2247,11 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Calle Vía de las dos Castillas, Pozuelo de Alarcón, Madrid</Value>
-                      <Style />
+                      <Style>
+                        <FontFamily>Bahnschrift</FontFamily>
+                        <FontSize>11pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style>
@@ -2155,10 +2260,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox27</rd:DefaultName>
-              <Top>3.95746cm</Top>
-              <Left>14.28683cm</Left>
+              <Top>2.88108cm</Top>
+              <Left>13.65183cm</Left>
               <Height>1.07639cm</Height>
-              <Width>5.05764cm</Width>
+              <Width>6.22181cm</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -2225,7 +2330,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox31</rd:DefaultName>
-              <Top>4.38009cm</Top>
+              <Top>3.74509cm</Top>
               <Left>2.49499cm</Left>
               <Height>0.88194cm</Height>
               <Width>9.03724cm</Width>
@@ -2259,7 +2364,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>5.12092cm</Top>
+              <Top>4.48592cm</Top>
               <Left>2.49499cm</Left>
               <Height>0.86458cm</Height>
               <Width>9.03724cm</Width>
@@ -2293,11 +2398,142 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>5.86175cm</Top>
+              <Top>5.22675cm</Top>
               <Left>2.49499cm</Left>
               <Height>0.88235cm</Height>
               <Width>9.03724cm</Width>
               <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Fecha registro:</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox12</rd:DefaultName>
+              <Top>5.068cm</Top>
+              <Left>12.65985cm</Left>
+              <Height>0.86458cm</Height>
+              <Width>3.47896cm</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox19">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!FechaRegistro.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox19</rd:DefaultName>
+              <Top>5.068cm</Top>
+              <Left>16.47406cm</Left>
+              <Height>0.86458cm</Height>
+              <Width>3.39958cm</Width>
+              <ZIndex>10</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox20">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>IBAN:</Value>
+                      <Style>
+                        <FontFamily>Bahnschrift</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox20</rd:DefaultName>
+              <Top>6.25021cm</Top>
+              <Left>2.49499cm</Left>
+              <Height>0.65264cm</Height>
+              <Width>2.1825cm</Width>
+              <ZIndex>11</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox21">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox20</rd:DefaultName>
+              <Top>6.25021cm</Top>
+              <Left>4.8186cm</Left>
+              <Height>0.65264cm</Height>
+              <Width>6.74891cm</Width>
+              <ZIndex>12</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2348,6 +2584,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -2579,101 +2821,4 @@ fwa1VXNx8MvDZ3ddmnpH/wCgCsO6/YZ+Bd4vzfDfTIz/ANMZZof/AEB6945o5quep/MRyQPA7P8AYT+B
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="NDoc">
-          <DataField>NDoc</DataField>
-        </Field>
-        <Field Name="FechaRegistro">
-          <DataField>FechaRegistro</DataField>
-        </Field>
-        <Field Name="NombreCliente">
-          <DataField>NombreCliente</DataField>
-        </Field>
-        <Field Name="NumeroCliente">
-          <DataField>NumeroCliente</DataField>
-        </Field>
-        <Field Name="Direccion">
-          <DataField>Direccion</DataField>
-        </Field>
-        <Field Name="Ciudad">
-          <DataField>Ciudad</DataField>
-        </Field>
-        <Field Name="CodigoPostal">
-          <DataField>CodigoPostal</DataField>
-        </Field>
-        <Field Name="MetodoPago">
-          <DataField>MetodoPago</DataField>
-        </Field>
-        <Field Name="Vencimientos">
-          <DataField>Vencimientos</DataField>
-        </Field>
-        <Field Name="CodigoProducto">
-          <DataField>CodigoProducto</DataField>
-        </Field>
-        <Field Name="Descripcion">
-          <DataField>Descripcion</DataField>
-        </Field>
-        <Field Name="Cantidad">
-          <DataField>Cantidad</DataField>
-        </Field>
-        <Field Name="CantidadFormat">
-          <DataField>CantidadFormat</DataField>
-        </Field>
-        <Field Name="Precio">
-          <DataField>Precio</DataField>
-        </Field>
-        <Field Name="PrecioFormat">
-          <DataField>PrecioFormat</DataField>
-        </Field>
-        <Field Name="Descuento">
-          <DataField>Descuento</DataField>
-        </Field>
-        <Field Name="DescuentoFormat">
-          <DataField>DescuentoFormat</DataField>
-        </Field>
-        <Field Name="Importe">
-          <DataField>Importe</DataField>
-        </Field>
-        <Field Name="ImporteFormat">
-          <DataField>ImporteFormat</DataField>
-        </Field>
-        <Field Name="BaseImponible">
-          <DataField>BaseImponible</DataField>
-        </Field>
-        <Field Name="BaseImponibleFormat">
-          <DataField>BaseImponibleFormat</DataField>
-        </Field>
-        <Field Name="Cuota">
-          <DataField>Cuota</DataField>
-        </Field>
-        <Field Name="CuotaFormat">
-          <DataField>CuotaFormat</DataField>
-        </Field>
-        <Field Name="IVA">
-          <DataField>IVA</DataField>
-        </Field>
-        <Field Name="IVAFormat">
-          <DataField>IVAFormat</DataField>
-        </Field>
-        <Field Name="Amount_Including_VAT">
-          <DataField>Amount_Including_VAT</DataField>
-        </Field>
-        <Field Name="Amount_Including_VATFormat">
-          <DataField>Amount_Including_VATFormat</DataField>
-        </Field>
-        <Field Name="Unit_Volume">
-          <DataField>Unit_Volume</DataField>
-        </Field>
-        <Field Name="Unit_VolumeFormat">
-          <DataField>Unit_VolumeFormat</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
