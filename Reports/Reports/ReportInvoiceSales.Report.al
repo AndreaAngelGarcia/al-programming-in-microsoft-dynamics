@@ -2,12 +2,13 @@ report 50501 InvoiceSales
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    DefaultRenderingLayout = RDLC;
+    DefaultRenderingLayout = RDL;
 
     dataset
     {
         dataitem(SalesHeader; "Sales Header")
         {
+            /* NÚMERO DOCUMENTO, FECHA REGISTRO Y DATOS DEL CLIENTE */
             column(NDoc; "No.")
             {
 
@@ -16,32 +17,26 @@ report 50501 InvoiceSales
             {
 
             }
-
             column(NombreCliente; "Sell-to Customer Name")
             {
 
             }
-
             column(NumeroCliente; "Sell-to Customer No.")
             {
 
             }
-
             column(Direccion; "Bill-to Address")
             {
 
             }
-
             column(Ciudad; "Bill-to City")
             {
 
             }
-
             column(CodigoPostal; "Bill-to Post Code")
             {
 
             }
-
             // MÉTODO DE PAGO Y VENCIMIENTOS
             column(MetodoPago; "Payment Method Code")
             {
@@ -57,6 +52,10 @@ report 50501 InvoiceSales
             {
                 DataItemLinkReference = SalesHeader;
                 DataItemLink = "Bill-to Customer No." = field("Bill-to Customer No.");
+                column(Line_No_; "Line No.")
+                {
+
+                }
                 column(CodigoProducto; "No.")
                 {
 
@@ -85,17 +84,14 @@ report 50501 InvoiceSales
                 {
 
                 }
-
                 column(Cuota; "Amount Including VAT" - "VAT Base Amount")
                 {
 
                 }
-
                 column(IVA; "VAT %")
                 {
 
                 }
-
                 column(Amount_Including_VAT; "Amount Including VAT")
                 {
 
@@ -104,7 +100,33 @@ report 50501 InvoiceSales
                 {
 
                 }
+                dataitem("Customer Bank Account"; "Customer Bank Account")
+                {
+                    DataItemLinkReference = "Sales Line";
+                    DataItemLink = "Customer No." = field("Sell-to Customer No.");
+                    column(IBAN; IBAN)
+                    {
 
+                    }
+
+                    trigger OnAfterGetRecord()
+                    var
+                        IBANLength: Integer;
+                        RedactedIBAN: Code[34];
+                        i: Integer;
+                    begin
+                        IBANLength := StrLen(IBAN);
+                        RedactedIBAN := IBAN;
+                        for i := 1 to IBANLength - 4 do begin
+                            if (RedactedIBAN[i] >= '0') and (RedactedIBAN[i] <= '9') then begin
+                                RedactedIBAN[i] := '*';
+                            end;
+                        end;
+                        IBAN := RedactedIBAN;
+                    end;
+                }
+
+                /* Si 'Type' es tipo 'Comment' se salta el registro */
                 trigger OnAfterGetRecord()
                 var
                     myInt: Integer;
@@ -113,11 +135,10 @@ report 50501 InvoiceSales
                     if Type.AsInteger() = 0 then
                         CurrReport.Skip();
 
-                    QuantityValue := "Sales Line"."Line Discount %";
+                    /*QuantityValue := "Sales Line"."Line Discount %";
                     if QuantityValue = 0 then
-                        "Sales Line"."Line Discount %" := 0 / 100;
+                        "Sales Line"."Line Discount %" := 0 / 100;*/
                 end;
-
             }
         }
     }
@@ -154,6 +175,11 @@ report 50501 InvoiceSales
         {
             Type = RDLC;
             LayoutFile = 'Rdl/SalesInvoice.rdl';
+        }
+        layout(RDL)
+        {
+            Type = RDLC;
+            LayoutFile = 'Rdl/SalesInvoice2.rdl';
         }
         layout(word)
         {
