@@ -1,4 +1,4 @@
-pageextension 50503 InvoiceSales extends "Sales Invoice List"
+pageextension 50502 InvoiceSales extends "Sales Invoice List"
 {
     layout
     {
@@ -14,6 +14,7 @@ pageextension 50503 InvoiceSales extends "Sales Invoice List"
                 ApplicationArea = All;
                 Caption = 'Factura Andrea';
                 Image = Report2;
+                Visible = isVisible;
 
                 trigger OnAction()
                 var
@@ -27,6 +28,17 @@ pageextension 50503 InvoiceSales extends "Sales Invoice List"
         }
     }
 
+    trigger OnAfterGetCurrRecord()
+
+    begin
+        if (IntegerVar = 1) then
+            isVisible := true
+        else
+            isVisible := false;
+    end;
+
     var
+        IntegerVar: Integer;
         myInt: Integer;
+        isVisible: Boolean;
 }

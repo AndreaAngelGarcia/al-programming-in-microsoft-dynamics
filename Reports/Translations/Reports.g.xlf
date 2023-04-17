@@ -133,6 +133,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PageExtensionVendorList - Action ListaAndrea - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 737546180 - Control 1927581206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
+          <source>Botón Andrea</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PaymentApplication - Control BotónFacturaDetallada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1393853337 - Field 1927581206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Botón Andrea</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TableExtConfiguration - Field BotónFacturaDetallada - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2977122805 - Field 3697709562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
           <source>Camp1</source>
           <note from="Developer" annotates="general" priority="2"></note>
