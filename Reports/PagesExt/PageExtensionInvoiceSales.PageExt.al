@@ -14,7 +14,7 @@ pageextension 50502 InvoiceSales extends "Sales Invoice List"
                 ApplicationArea = All;
                 Caption = 'Factura Andrea';
                 Image = Report2;
-                Visible = isVisible;
+                Visible = isVisible;  //Ponemos que sea Visible según la variable global
 
                 trigger OnAction()
                 var
@@ -28,17 +28,16 @@ pageextension 50502 InvoiceSales extends "Sales Invoice List"
         }
     }
 
-    trigger OnAfterGetCurrRecord()
+    trigger OnOpenPage()
 
+    var
+        TabExtSetup: Record "Sales & Receivables Setup";
     begin
-        if (IntegerVar = 1) then
-            isVisible := true
-        else
-            isVisible := false;
+        if (TabExtSetup.Get()) then // Obtenemos el registro de la tabla
+            isVisible := TabExtSetup.BotónFacturaDetallada; // Almacenamos el valor del campo booleano en la variable global
     end;
 
     var
-        IntegerVar: Integer;
         myInt: Integer;
         isVisible: Boolean;
 }

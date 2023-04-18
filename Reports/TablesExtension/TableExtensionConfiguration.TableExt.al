@@ -6,9 +6,9 @@ tableextension 50501 TableExtConfiguration extends "Sales & Receivables Setup"
         {
             DataClassification = ToBeClassified;
             Caption = 'Botón Andrea';
+            InitValue = true;
         }
     }
-
 
     var
         myInt: Integer;
