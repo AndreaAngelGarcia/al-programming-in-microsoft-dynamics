@@ -1,4 +1,4 @@
-pageextension 50503 PaymentApplication extends "Sales & Receivables Setup"
+pageextension 50501 PaymentApplication extends "Sales & Receivables Setup"
 {
     layout
     {

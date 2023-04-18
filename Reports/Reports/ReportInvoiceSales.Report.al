@@ -88,7 +88,7 @@ report 50501 InvoiceSales
                 {
 
                 }
-                column(IVA; "VAT %")
+                column(IVA; "VAT %" / 100)
                 {
 
                 }

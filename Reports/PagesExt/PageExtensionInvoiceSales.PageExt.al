@@ -1,4 +1,4 @@
-pageextension 50502 InvoiceSales extends "Sales Invoice List"
+pageextension 50500 InvoiceSales extends "Sales Invoice List"
 {
     layout
     {

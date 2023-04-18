@@ -11,109 +11,6 @@
       <rd:DataSourceID>cbbaeda7-84e7-4db2-b87e-077aec6acf5f</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="NDoc">
-          <DataField>NDoc</DataField>
-        </Field>
-        <Field Name="FechaRegistro">
-          <DataField>FechaRegistro</DataField>
-        </Field>
-        <Field Name="NombreCliente">
-          <DataField>NombreCliente</DataField>
-        </Field>
-        <Field Name="NumeroCliente">
-          <DataField>NumeroCliente</DataField>
-        </Field>
-        <Field Name="Direccion">
-          <DataField>Direccion</DataField>
-        </Field>
-        <Field Name="Ciudad">
-          <DataField>Ciudad</DataField>
-        </Field>
-        <Field Name="CodigoPostal">
-          <DataField>CodigoPostal</DataField>
-        </Field>
-        <Field Name="MetodoPago">
-          <DataField>MetodoPago</DataField>
-        </Field>
-        <Field Name="Vencimientos">
-          <DataField>Vencimientos</DataField>
-        </Field>
-        <Field Name="Line_No_">
-          <DataField>Line_No_</DataField>
-        </Field>
-        <Field Name="CodigoProducto">
-          <DataField>CodigoProducto</DataField>
-        </Field>
-        <Field Name="Descripcion">
-          <DataField>Descripcion</DataField>
-        </Field>
-        <Field Name="Cantidad">
-          <DataField>Cantidad</DataField>
-        </Field>
-        <Field Name="CantidadFormat">
-          <DataField>CantidadFormat</DataField>
-        </Field>
-        <Field Name="Precio">
-          <DataField>Precio</DataField>
-        </Field>
-        <Field Name="PrecioFormat">
-          <DataField>PrecioFormat</DataField>
-        </Field>
-        <Field Name="Descuento">
-          <DataField>Descuento</DataField>
-        </Field>
-        <Field Name="DescuentoFormat">
-          <DataField>DescuentoFormat</DataField>
-        </Field>
-        <Field Name="Importe">
-          <DataField>Importe</DataField>
-        </Field>
-        <Field Name="ImporteFormat">
-          <DataField>ImporteFormat</DataField>
-        </Field>
-        <Field Name="BaseImponible">
-          <DataField>BaseImponible</DataField>
-        </Field>
-        <Field Name="BaseImponibleFormat">
-          <DataField>BaseImponibleFormat</DataField>
-        </Field>
-        <Field Name="Cuota">
-          <DataField>Cuota</DataField>
-        </Field>
-        <Field Name="CuotaFormat">
-          <DataField>CuotaFormat</DataField>
-        </Field>
-        <Field Name="IVA">
-          <DataField>IVA</DataField>
-        </Field>
-        <Field Name="IVAFormat">
-          <DataField>IVAFormat</DataField>
-        </Field>
-        <Field Name="Amount_Including_VAT">
-          <DataField>Amount_Including_VAT</DataField>
-        </Field>
-        <Field Name="Amount_Including_VATFormat">
-          <DataField>Amount_Including_VATFormat</DataField>
-        </Field>
-        <Field Name="Unit_Volume">
-          <DataField>Unit_Volume</DataField>
-        </Field>
-        <Field Name="Unit_VolumeFormat">
-          <DataField>Unit_VolumeFormat</DataField>
-        </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -822,7 +719,7 @@
                               </TablixRowHierarchy>
                               <DataSetName>DataSet_Result</DataSetName>
                               <Top>6.31296cm</Top>
-                              <Height>2.15698cm</Height>
+                              <Height>2.15697cm</Height>
                               <Width>20.06132cm</Width>
                               <ZIndex>10</ZIndex>
                               <Style>
@@ -840,7 +737,6 @@
                           </Style>
                         </Rectangle>
                         <ColSpan>6</ColSpan>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -1552,7 +1448,7 @@
             <DataSetName>DataSet_Result</DataSetName>
             <Top>0.46657cm</Top>
             <Left>0.39995cm</Left>
-            <Height>11.25151cm</Height>
+            <Height>11.2515cm</Height>
             <Width>20.08776cm</Width>
             <Style>
               <Border>
@@ -1864,7 +1760,28 @@
                           <Style>
                             <Border>
                               <Style>Solid</Style>
+                              <Width>0.75pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1901,7 +1818,28 @@
                           <Style>
                             <Border>
                               <Style>Solid</Style>
+                              <Width>0.75pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1937,7 +1875,28 @@
                           <Style>
                             <Border>
                               <Style>Solid</Style>
+                              <Width>0.75pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1989,7 +1948,28 @@
                           <Style>
                             <Border>
                               <Style>Solid</Style>
+                              <Width>0.75pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2079,27 +2059,27 @@
                           <Style>
                             <Border>
                               <Style>Solid</Style>
-                              <Width>1.5pt</Width>
+                              <Width>0.75pt</Width>
                             </Border>
                             <TopBorder>
                               <Color>Black</Color>
                               <Style>Solid</Style>
-                              <Width>1.5pt</Width>
+                              <Width>0.75pt</Width>
                             </TopBorder>
                             <BottomBorder>
                               <Color>Black</Color>
                               <Style>Solid</Style>
-                              <Width>1.5pt</Width>
+                              <Width>0.75pt</Width>
                             </BottomBorder>
                             <LeftBorder>
                               <Color>Black</Color>
                               <Style>Solid</Style>
-                              <Width>1.5pt</Width>
+                              <Width>0.75pt</Width>
                             </LeftBorder>
                             <RightBorder>
                               <Color>Black</Color>
                               <Style>Solid</Style>
-                              <Width>1.5pt</Width>
+                              <Width>0.75pt</Width>
                             </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -2151,8 +2131,28 @@
                           <Style>
                             <Border>
                               <Style>Solid</Style>
-                              <Width>1.5pt</Width>
+                              <Width>0.75pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>0.75pt</Width>
+                            </RightBorder>
                             <BackgroundColor>White</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -2504,7 +2504,7 @@
             <DataSetName>DataSet_Result</DataSetName>
             <Top>15.4303cm</Top>
             <Left>6.26342cm</Left>
-            <Height>1.43735cm</Height>
+            <Height>1.43734cm</Height>
             <Width>8.33438cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
@@ -2538,6 +2538,36 @@
                 </Border>
               </Style>
             </Image>
+            <Textbox Name="Textbox72">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox72</rd:DefaultName>
+              <Top>1.19031cm</Top>
+              <Left>16.94729cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.5cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style>
             <Border>
@@ -2552,12 +2582,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -2694,4 +2718,107 @@ fwa1VXNx8MvDZ3ddmnpH/wCgCsO6/YZ+Bd4vzfDfTIz/ANMZZof/AEB6945o5quep/MRyQPA7P8AYT+B
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="NDoc">
+          <DataField>NDoc</DataField>
+        </Field>
+        <Field Name="FechaRegistro">
+          <DataField>FechaRegistro</DataField>
+        </Field>
+        <Field Name="NombreCliente">
+          <DataField>NombreCliente</DataField>
+        </Field>
+        <Field Name="NumeroCliente">
+          <DataField>NumeroCliente</DataField>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+        </Field>
+        <Field Name="Ciudad">
+          <DataField>Ciudad</DataField>
+        </Field>
+        <Field Name="CodigoPostal">
+          <DataField>CodigoPostal</DataField>
+        </Field>
+        <Field Name="MetodoPago">
+          <DataField>MetodoPago</DataField>
+        </Field>
+        <Field Name="Vencimientos">
+          <DataField>Vencimientos</DataField>
+        </Field>
+        <Field Name="Line_No_">
+          <DataField>Line_No_</DataField>
+        </Field>
+        <Field Name="CodigoProducto">
+          <DataField>CodigoProducto</DataField>
+        </Field>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+        </Field>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+        </Field>
+        <Field Name="CantidadFormat">
+          <DataField>CantidadFormat</DataField>
+        </Field>
+        <Field Name="Precio">
+          <DataField>Precio</DataField>
+        </Field>
+        <Field Name="PrecioFormat">
+          <DataField>PrecioFormat</DataField>
+        </Field>
+        <Field Name="Descuento">
+          <DataField>Descuento</DataField>
+        </Field>
+        <Field Name="DescuentoFormat">
+          <DataField>DescuentoFormat</DataField>
+        </Field>
+        <Field Name="Importe">
+          <DataField>Importe</DataField>
+        </Field>
+        <Field Name="ImporteFormat">
+          <DataField>ImporteFormat</DataField>
+        </Field>
+        <Field Name="BaseImponible">
+          <DataField>BaseImponible</DataField>
+        </Field>
+        <Field Name="BaseImponibleFormat">
+          <DataField>BaseImponibleFormat</DataField>
+        </Field>
+        <Field Name="Cuota">
+          <DataField>Cuota</DataField>
+        </Field>
+        <Field Name="CuotaFormat">
+          <DataField>CuotaFormat</DataField>
+        </Field>
+        <Field Name="IVA">
+          <DataField>IVA</DataField>
+        </Field>
+        <Field Name="IVAFormat">
+          <DataField>IVAFormat</DataField>
+        </Field>
+        <Field Name="Amount_Including_VAT">
+          <DataField>Amount_Including_VAT</DataField>
+        </Field>
+        <Field Name="Amount_Including_VATFormat">
+          <DataField>Amount_Including_VATFormat</DataField>
+        </Field>
+        <Field Name="Unit_Volume">
+          <DataField>Unit_Volume</DataField>
+        </Field>
+        <Field Name="Unit_VolumeFormat">
+          <DataField>Unit_VolumeFormat</DataField>
+        </Field>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
