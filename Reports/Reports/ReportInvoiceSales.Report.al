@@ -51,7 +51,7 @@ report 50501 InvoiceSales
             dataitem("Sales Line"; "Sales Line")
             {
                 DataItemLinkReference = SalesHeader;
-                DataItemLink = "Bill-to Customer No." = field("Bill-to Customer No.");
+                DataItemLink = "Document No." = field("No.");
                 column(Line_No_; "Line No.")
                 {
 
@@ -72,11 +72,15 @@ report 50501 InvoiceSales
                 {
 
                 }
-                column(Descuento; "Line Discount %")
+                column(Descuento; "Line Discount %" / 100)
                 {
 
                 }
                 column(Importe; "Line Amount")
+                {
+
+                }
+                column(Unit_of_Measure_Code; "Unit of Measure Code")
                 {
 
                 }

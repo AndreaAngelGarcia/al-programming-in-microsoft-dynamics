@@ -31,10 +31,9 @@ pageextension 50500 InvoiceSales extends "Sales Invoice List"
     trigger OnOpenPage()
 
     var
-        TabExtSetup: Record "Sales & Receivables Setup";
+        SalesReceivables: Codeunit CodeUnitSalesReceivables;
     begin
-        if (TabExtSetup.Get()) then // Obtenemos el registro de la tabla
-            isVisible := TabExtSetup.BotónFacturaDetallada; // Almacenamos el valor del campo booleano en la variable global
+        isVisible := SalesReceivables.Visibility();
     end;
 
     var

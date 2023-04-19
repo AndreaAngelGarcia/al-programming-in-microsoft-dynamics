@@ -2781,6 +2781,9 @@ fwa1VXNx8MvDZ3ddmnpH/wCgCsO6/YZ+Bd4vzfDfTIz/ANMZZof/AEB6945o5quep/MRyQPA7P8AYT+B
         <Field Name="ImporteFormat">
           <DataField>ImporteFormat</DataField>
         </Field>
+        <Field Name="Unit_of_Measure_Code">
+          <DataField>Unit_of_Measure_Code</DataField>
+        </Field>
         <Field Name="BaseImponible">
           <DataField>BaseImponible</DataField>
         </Field>
