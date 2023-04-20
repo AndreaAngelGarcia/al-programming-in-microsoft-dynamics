@@ -145,10 +145,6 @@ report 50501 InvoiceSales
                 begin
                     if Type.AsInteger() = 0 then
                         CurrReport.Skip();
-
-                    /*QuantityValue := "Sales Line"."Line Discount %";
-                    if QuantityValue = 0 then
-                        "Sales Line"."Line Discount %" := 0 / 100;*/
                 end;
             }
         }
@@ -182,17 +178,12 @@ report 50501 InvoiceSales
 
     rendering
     {
-        layout(RDLC)
+        layout(RDL)
         {
             Type = RDLC;
             LayoutFile = 'Rdl/SalesInvoice.rdl';
         }
-        layout(RDL)
-        {
-            Type = RDLC;
-            LayoutFile = 'Rdl/SalesInvoice2.rdl';
-        }
-        layout(word)
+        layout(Word)
         {
             type = Word;
             LayoutFile = 'Rdl/SalesInvoice.docx';

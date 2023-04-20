@@ -1,14 +1,13 @@
 pageextension 50501 PaymentApplication extends "Sales & Receivables Setup"
 {
-    Editable = true;
 
     layout
     {
-        addfirst(General)
+        addlast(General)
         {
             group(Visibility)
             {
-                Caption = 'andrea';
+                Caption = 'Visibilidad Andrea';
                 field(boton; Rec.BotónFacturaDetallada)
                 {
                     ApplicationArea = All;
@@ -16,26 +15,6 @@ pageextension 50501 PaymentApplication extends "Sales & Receivables Setup"
                     Editable = true;
                 }
             }
-
-            field(prueba; Rec.prueba)
-            {
-                ApplicationArea = All;
-                Caption = 'Botón prueba';
-                Editable = true;
-
-                trigger OnValidate()
-                var
-                    myInt: Integer;
-                begin
-                    if Rec.prueba then begin
-                        Rec.prueba := true;
-                    end else begin
-                        Rec.prueba := false;
-                    end;
-                    Commit();
-                end;
-            }
-
         }
     }
 

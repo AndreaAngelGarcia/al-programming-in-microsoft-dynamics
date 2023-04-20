@@ -68,28 +68,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension InvoiceSales - Action FacturaAndrea - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 3017604310 - Control 606606979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
-          <source>Botón prueba</source>
+        <trans-unit id="PageExtension 4220721695 - Action 4107840117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Factura Andrea</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobsSetupext - Control prueba - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3017604310 - Control 3217673354 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
-          <source>andrea</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobsSetupext - Control Visibility - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3017604310 - Control 744009556 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2556642749">
-          <source>Botón Andrea</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension JobsSetupext - Control boton - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 737546180 - Control 606606979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
-          <source>Botón prueba</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PaymentApplication - Control prueba - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension InvoiceSalesCard - Action FacturaAndrea - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 737546180 - Control 3217673354 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
-          <source>andrea</source>
+          <source>Visibilidad Andrea</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PaymentApplication - Control Visibility - Property Caption</note>
         </trans-unit>
@@ -98,50 +83,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PaymentApplication - Control boton - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 804706385 - Control 606606979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
-          <source>Botón prueba</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderext - Control prueba - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 804706385 - Control 3217673354 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
-          <source>andrea</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderext - Control Visibility - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 804706385 - Control 744009556 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
-          <source>Botón Andrea</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension SalesOrderext - Control boton - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3017604310 - Field 1927581206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
-          <source>Botón Andrea</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsSetupext - Field BotónFacturaDetallada - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3017604310 - Field 606606979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2556642749">
-          <source>Botón prueba</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension JobsSetupext - Field prueba - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 1307229938 - Field 1927581206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
-          <source>Botón Andrea</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension salesheaderext - Field BotónFacturaDetallada - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 1307229938 - Field 606606979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
-          <source>Botón prueba</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension salesheaderext - Field prueba - Property Caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 1393853337 - Field 1927581206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Botón Andrea</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TableExtConfiguration - Field BotónFacturaDetallada - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 1393853337 - Field 606606979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
-          <source>Botón prueba</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TableExtConfiguration - Field prueba - Property Caption</note>
         </trans-unit>
       </group>
     </body>

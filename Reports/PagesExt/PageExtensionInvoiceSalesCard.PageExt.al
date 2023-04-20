@@ -1,13 +1,14 @@
-pageextension 50500 InvoiceSales extends "Sales Invoice List"
+pageextension 50502 InvoiceSalesCard extends "Sales Invoice"
 {
+
     layout
     {
-        // Add changes to page layout here
+
     }
 
     actions
     {
-        addafter(Reports)
+        addafter("P&osting")
         {
             action(FacturaAndrea)
             {
@@ -22,8 +23,7 @@ pageextension 50500 InvoiceSales extends "Sales Invoice List"
                 begin
                     Header.Reset();
                     CurrPage.SetSelectionFilter(Header);
-                    if Header.FindSet() then
-                        Report.Run(Report::InvoiceSales, true, true, Header);
+                    Report.Run(Report::InvoiceSales, true, true, Header);
                 end;
             }
         }
