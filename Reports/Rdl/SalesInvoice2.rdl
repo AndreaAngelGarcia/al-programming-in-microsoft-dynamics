@@ -68,7 +68,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox15</rd:DefaultName>
                               <Top>1.8155cm</Top>
-                              <Left>0.99342cm</Left>
+                              <Left>1.55786cm</Left>
                               <Height>0.84667cm</Height>
                               <Width>9.03724cm</Width>
                               <Style>
@@ -91,8 +91,9 @@
                                       <Value>OCA GLOBAL</Value>
                                       <Style>
                                         <FontFamily>Cambria</FontFamily>
-                                        <FontSize>22pt</FontSize>
+                                        <FontSize>26pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
+                                        <Color>#16409c</Color>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -102,9 +103,9 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox25</rd:DefaultName>
-                              <Top>2.52106cm</Top>
+                              <Top>1.47991cm</Top>
                               <Left>12.86903cm</Left>
-                              <Height>1.12904cm</Height>
+                              <Height>2.24059cm</Height>
                               <Width>4.9065cm</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
@@ -138,7 +139,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox26</rd:DefaultName>
-                              <Top>4.07373cm</Top>
+                              <Top>4.16187cm</Top>
                               <Left>11.84476cm</Left>
                               <Height>0.68792cm</Height>
                               <Width>6.93618cm</Width>
@@ -173,7 +174,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox31</rd:DefaultName>
                               <Top>2.52106cm</Top>
-                              <Left>0.99342cm</Left>
+                              <Left>1.55786cm</Left>
                               <Height>0.88194cm</Height>
                               <Width>9.03724cm</Width>
                               <ZIndex>3</ZIndex>
@@ -207,7 +208,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox1</rd:DefaultName>
                               <Top>3.26189cm</Top>
-                              <Left>0.99342cm</Left>
+                              <Left>1.55786cm</Left>
                               <Height>0.86458cm</Height>
                               <Width>9.03724cm</Width>
                               <ZIndex>4</ZIndex>
@@ -241,7 +242,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox3</rd:DefaultName>
                               <Top>4.00272cm</Top>
-                              <Left>0.99342cm</Left>
+                              <Left>1.55786cm</Left>
                               <Height>0.84707cm</Height>
                               <Width>9.03724cm</Width>
                               <ZIndex>5</ZIndex>
@@ -275,7 +276,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox20</rd:DefaultName>
                               <Top>4.84979cm</Top>
-                              <Left>0.99342cm</Left>
+                              <Left>1.55786cm</Left>
                               <Height>0.91722cm</Height>
                               <Width>2.42944cm</Width>
                               <ZIndex>6</ZIndex>
@@ -299,7 +300,7 @@
                                       <Value>=First(Fields!IBAN.Value, "DataSet_Result")</Value>
                                       <Style>
                                         <FontFamily>Bahnschrift</FontFamily>
-                                        <FontSize>12pt</FontSize>
+                                        <FontSize>13pt</FontSize>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -308,7 +309,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox20</rd:DefaultName>
                               <Top>4.84979cm</Top>
-                              <Left>2.42627cm</Left>
+                              <Left>2.99071cm</Left>
                               <Height>0.91722cm</Height>
                               <Width>7.60439cm</Width>
                               <ZIndex>7</ZIndex>
@@ -329,7 +330,15 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Cliente: </Value>
+                                      <Value>Cliente:</Value>
+                                      <Style>
+                                        <FontFamily>Bahnschrift</FontFamily>
+                                        <FontSize>16pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value xml:space="preserve"> </Value>
                                       <Style>
                                         <FontFamily>Bahnschrift</FontFamily>
                                         <FontSize>14pt</FontSize>
@@ -342,9 +351,9 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox5</rd:DefaultName>
                               <Top>0.89612cm</Top>
-                              <Left>0.99342cm</Left>
+                              <Left>1.55786cm</Left>
                               <Height>0.74299cm</Height>
-                              <Width>1.89146cm</Width>
+                              <Width>2.42944cm</Width>
                               <ZIndex>8</ZIndex>
                               <Style>
                                 <Border>
@@ -366,7 +375,7 @@
                                       <Value>=First(Fields!NumeroCliente.Value, "DataSet_Result")</Value>
                                       <Style>
                                         <FontFamily>Bahnschrift</FontFamily>
-                                        <FontSize>14pt</FontSize>
+                                        <FontSize>16pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
                                     </TextRun>
@@ -376,7 +385,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox6</rd:DefaultName>
                               <Top>0.89612cm</Top>
-                              <Left>2.99071cm</Left>
+                              <Left>3.55515cm</Left>
                               <Height>0.74299cm</Height>
                               <Width>2.5cm</Width>
                               <ZIndex>9</ZIndex>
@@ -418,6 +427,7 @@
                                                       <FontFamily>Bahnschrift</FontFamily>
                                                       <FontSize>14pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
+                                                      <Color>White</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -452,7 +462,7 @@
                                                 <Style>Solid</Style>
                                                 <Width>1.5pt</Width>
                                               </RightBorder>
-                                              <BackgroundColor>White</BackgroundColor>
+                                              <BackgroundColor>#16409c</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -482,6 +492,7 @@
                                                       <FontFamily>Bahnschrift</FontFamily>
                                                       <FontSize>12pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
+                                                      <Color>White</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -517,6 +528,7 @@
                                                 <Style>Solid</Style>
                                                 <Width>1.5pt</Width>
                                               </RightBorder>
+                                              <BackgroundColor>#16409c</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -539,6 +551,7 @@
                                                       <FontFamily>Bahnschrift</FontFamily>
                                                       <FontSize>12pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
+                                                      <Color>White</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -573,6 +586,7 @@
                                                 <Style>Solid</Style>
                                                 <Width>1.5pt</Width>
                                               </RightBorder>
+                                              <BackgroundColor>#16409c</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -599,6 +613,7 @@
                                                     <Style>
                                                       <FontFamily>Bahnschrift</FontFamily>
                                                       <FontSize>12pt</FontSize>
+                                                      <Color>White</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -632,6 +647,7 @@
                                                 <Style>Solid</Style>
                                                 <Width>1.5pt</Width>
                                               </RightBorder>
+                                              <BackgroundColor>#4b71d2</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -653,6 +669,7 @@
                                                     <Style>
                                                       <FontFamily>Bahnschrift</FontFamily>
                                                       <FontSize>12pt</FontSize>
+                                                      <Color>White</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -685,6 +702,7 @@
                                                 <Style>Solid</Style>
                                                 <Width>1.5pt</Width>
                                               </RightBorder>
+                                              <BackgroundColor>#4b71d2</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -766,6 +784,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -780,6 +799,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -814,7 +834,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -836,6 +856,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -850,6 +871,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -884,7 +906,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -906,6 +928,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -920,6 +943,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -954,7 +978,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -976,6 +1000,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -990,6 +1015,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1024,7 +1050,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1046,6 +1072,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1060,6 +1087,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1094,7 +1122,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1116,6 +1144,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1130,6 +1159,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1164,7 +1194,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1186,6 +1216,7 @@
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1200,6 +1231,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1234,7 +1266,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1460,7 +1492,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1600,6 +1631,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1634,7 +1666,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1656,6 +1688,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1690,7 +1723,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1712,6 +1745,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1746,7 +1780,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1768,6 +1802,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1782,6 +1817,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1816,7 +1852,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1916,7 +1952,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Normal</FontWeight>
-                                    <Format>0 %</Format>
+                                    <Format>0.00 %</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2124,6 +2160,7 @@
                                   <Style>
                                     <FontSize>1pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2138,6 +2175,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2172,7 +2210,7 @@
                               <Style>Solid</Style>
                               <Width>0.75pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2322,6 +2360,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2356,7 +2395,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2378,6 +2417,7 @@
                                   <Style>
                                     <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2412,7 +2452,7 @@
                               <Style>Solid</Style>
                               <Width>1.5pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>#16409c</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>

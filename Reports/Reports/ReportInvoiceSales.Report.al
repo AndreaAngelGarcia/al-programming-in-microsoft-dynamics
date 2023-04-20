@@ -13,7 +13,7 @@ report 50501 InvoiceSales
             {
 
             }
-            column(FechaRegistro; Format("Posting Date", 0, '<Closing><Day,2>-<Month,2>-<Year>'))
+            column(FechaRegistro; Format("Posting Date", 0, '<Closing><Day,2>-<Month,2>-<Year>')) //Formateo de fecha
             {
 
             }
@@ -43,7 +43,7 @@ report 50501 InvoiceSales
 
             }
 
-            column(Vencimientos; Format("Due Date", 0, '<Closing><Day,2>-<Month,2>-<Year>'))
+            column(Vencimientos; Format("Due Date", 0, '<Closing><Day,2>-<Month,2>-<Year>')) // Formateo de fecha 
             {
 
             }
@@ -70,15 +70,18 @@ report 50501 InvoiceSales
                 }
                 column(Precio; "Unit Price")
                 {
-
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<precision, 1:1><standard format,0>€';
                 }
                 column(Descuento; "Line Discount %" / 100)
                 {
-
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<precision, 1:1><standard format,0>%';
                 }
                 column(Importe; "Line Amount")
                 {
-
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<precision, 1:1><standard format,0>€';
                 }
                 column(Unit_of_Measure_Code; "Unit of Measure Code")
                 {
@@ -86,19 +89,23 @@ report 50501 InvoiceSales
                 }
                 column(BaseImponible; "VAT Base Amount")
                 {
-
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<precision, 1:1><standard format,0>€';
                 }
                 column(Cuota; "Amount Including VAT" - "VAT Base Amount")
                 {
-
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<precision, 1:1><standard format,0>€';
                 }
                 column(IVA; "VAT %" / 100)
                 {
-
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<precision, 1:1><standard format,0>%';
                 }
                 column(Amount_Including_VAT; "Amount Including VAT")
                 {
-
+                    AutoFormatType = 10;
+                    AutoFormatExpression = '<precision, 1:1><standard format,0>€';
                 }
                 column(Unit_Volume; "Unit Volume")
                 {
