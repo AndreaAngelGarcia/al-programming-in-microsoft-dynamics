@@ -9,8 +9,10 @@ tableextension 50500 TableExtEventsAndrea extends Item
         }
         field(50501; CantidadDisponible; Integer)
         {
-            DataClassification = ToBeClassified;
             Caption = 'Cantidad disponible en pedidos';
+            AccessByPermission = TableData Item = I;
+            FieldClass = FlowField;
+            CalcFormula = Count(Item);
         }
     }
 
