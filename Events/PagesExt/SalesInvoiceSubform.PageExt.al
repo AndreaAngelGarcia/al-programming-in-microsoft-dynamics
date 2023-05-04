@@ -10,7 +10,6 @@ pageextension 50501 SalesInvoiceAndrea extends "Sales Invoice Subform"
                 Caption = 'Fecha disponibilidad Andrea';
                 Style = StandardAccent;
                 StyleExpr = false;
-
             }
         }
     }

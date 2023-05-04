@@ -14,7 +14,8 @@ tableextension 50500 TableExtEventsAndrea extends Item
             FieldClass = FlowField;
             CalcFormula = COUNT("Sales Line" WHERE(FechaDisponibilidad = FILTER(<> 0D),
                                                     Quantity = FILTER(> 0),
-                                                    "No." = FIELD("No.")));
+                                                    "No." = FIELD("No."),
+                                                    "Document Type" = FILTER(Page::"Sales Invoice")));
         }
     }
 
