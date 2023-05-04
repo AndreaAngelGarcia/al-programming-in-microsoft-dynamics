@@ -5,22 +5,32 @@ codeunit 50500 CodeUnitEvents
 
     end;
 
+    /// <summary>
+    /// Evento que al crear un producto nuevo, si la fecha está vacía se muestra un mensaje
+    /// diciendo que se ha creado sin fecha de disponibilidad.
+    /// </summary>
     [EventSubscriber(ObjectType::Table, Database::"Item", 'OnAfterValidateEvent', 'FechaDisponibilidad', true, true)]
     local procedure OnAfterValidateEvent(var Rec: Record Item)
     var
         ItemCardPage: Record Item;
-        SalesInvoice: Record "Sales Line";
-        FoundRecord: Integer;
     begin
         if Rec.FechaDisponibilidad = 0D then
             Message(Format('El producto de Andrea' + Rec."No." + ' se ha creado sin fecha de disponibilidad'))
         else begin
-            ItemCardPage.Reset();
-            ItemCardPage.SetRange(ItemCardPage."No.", SalesInvoice."No.");
-            if ItemCardPage.FindSet() then begin
-                FoundRecord := ItemCardPage.Count();
-            end;
+
         end;
+    end;
+
+    /// <summary>
+    ///
+    /// </summary>
+    [EventSubscriber(ObjectType::Page, Page::"Sales Invoice", 'OnBeforeActionEvent', 'Post', true, true)]
+    local procedure OnBeforeActionEvent()
+    begin
+        if Confirm('¿Desea continuar sin poner una fecha de disponibilidad?', false) then
+            exit
+        else
+            Error('');
     end;
 
     /*[EventSubscriber(ObjectType::Page, Page::"Item Card", 'OnAfterGetRecordEvent', '', true, true)]
