@@ -12,10 +12,10 @@ tableextension 50500 TableExtEventsAndrea extends Item
             Caption = 'Cantidad disponible en pedidos';
             AccessByPermission = TableData Item = I;
             FieldClass = FlowField;
-            CalcFormula = COUNT("Sales Line" WHERE(FechaDisponibilidad = FILTER(<> 0D),
+            CalcFormula = COUNT("Sales Line" WHERE("Document Type" = FILTER(Invoice),
+                                                    FechaDisponibilidad = FILTER(<> 0D),
                                                     Quantity = FILTER(> 0),
-                                                    "No." = FIELD("No."),
-                                                    "Document Type" = FILTER(Page::"Sales Invoice")));
+                                                    "No." = FIELD("No.")));
         }
     }
 
