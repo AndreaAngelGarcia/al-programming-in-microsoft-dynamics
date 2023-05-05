@@ -22,7 +22,7 @@ codeunit 50500 CodeUnitEvents
     end;
 
     /// <summary>
-    ///
+    /// Evento para que salga un mensaje de confirmación si quieres seguir sin fecha de disponibilidad
     /// </summary>
     [EventSubscriber(ObjectType::Page, Page::"Sales Invoice", 'OnBeforeActionEvent', 'Post', true, true)]
     local procedure OnBeforeActionEvent()
