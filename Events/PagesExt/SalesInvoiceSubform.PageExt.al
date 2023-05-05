@@ -9,7 +9,7 @@ pageextension 50501 SalesInvoiceAndrea extends "Sales Invoice Subform"
                 ApplicationArea = All;
                 Caption = 'Fecha disponibilidad Andrea';
                 Style = StandardAccent;
-                StyleExpr = false;
+                StyleExpr = true;
             }
         }
     }

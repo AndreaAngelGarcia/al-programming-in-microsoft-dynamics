@@ -15,7 +15,7 @@ codeunit 50500 CodeUnitEvents
         ItemCardPage: Record Item;
     begin
         if Rec.FechaDisponibilidad = 0D then
-            Message(Format('El producto de Andrea' + Rec."No." + ' se ha creado sin fecha de disponibilidad'))
+            Message(Format('El producto de Andrea ' + Rec."No." + ' se ha creado sin fecha de disponibilidad'))
         else begin
 
         end;
