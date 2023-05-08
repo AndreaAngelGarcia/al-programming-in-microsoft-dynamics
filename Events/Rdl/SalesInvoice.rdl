@@ -11,6 +11,115 @@
       <rd:DataSourceID>cbbaeda7-84e7-4db2-b87e-077aec6acf5f</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="NDoc">
+          <DataField>NDoc</DataField>
+        </Field>
+        <Field Name="FechaRegistro">
+          <DataField>FechaRegistro</DataField>
+        </Field>
+        <Field Name="NombreCliente">
+          <DataField>NombreCliente</DataField>
+        </Field>
+        <Field Name="NumeroCliente">
+          <DataField>NumeroCliente</DataField>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+        </Field>
+        <Field Name="Ciudad">
+          <DataField>Ciudad</DataField>
+        </Field>
+        <Field Name="CodigoPostal">
+          <DataField>CodigoPostal</DataField>
+        </Field>
+        <Field Name="MetodoPago">
+          <DataField>MetodoPago</DataField>
+        </Field>
+        <Field Name="Vencimientos">
+          <DataField>Vencimientos</DataField>
+        </Field>
+        <Field Name="Line_No_">
+          <DataField>Line_No_</DataField>
+        </Field>
+        <Field Name="CodigoProducto">
+          <DataField>CodigoProducto</DataField>
+        </Field>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+        </Field>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+        </Field>
+        <Field Name="CantidadFormat">
+          <DataField>CantidadFormat</DataField>
+        </Field>
+        <Field Name="Precio">
+          <DataField>Precio</DataField>
+        </Field>
+        <Field Name="PrecioFormat">
+          <DataField>PrecioFormat</DataField>
+        </Field>
+        <Field Name="Descuento">
+          <DataField>Descuento</DataField>
+        </Field>
+        <Field Name="DescuentoFormat">
+          <DataField>DescuentoFormat</DataField>
+        </Field>
+        <Field Name="Importe">
+          <DataField>Importe</DataField>
+        </Field>
+        <Field Name="ImporteFormat">
+          <DataField>ImporteFormat</DataField>
+        </Field>
+        <Field Name="Unit_of_Measure_Code">
+          <DataField>Unit_of_Measure_Code</DataField>
+        </Field>
+        <Field Name="BaseImponible">
+          <DataField>BaseImponible</DataField>
+        </Field>
+        <Field Name="BaseImponibleFormat">
+          <DataField>BaseImponibleFormat</DataField>
+        </Field>
+        <Field Name="Cuota">
+          <DataField>Cuota</DataField>
+        </Field>
+        <Field Name="CuotaFormat">
+          <DataField>CuotaFormat</DataField>
+        </Field>
+        <Field Name="IVA">
+          <DataField>IVA</DataField>
+        </Field>
+        <Field Name="IVAFormat">
+          <DataField>IVAFormat</DataField>
+        </Field>
+        <Field Name="Amount_Including_VAT">
+          <DataField>Amount_Including_VAT</DataField>
+        </Field>
+        <Field Name="Amount_Including_VATFormat">
+          <DataField>Amount_Including_VATFormat</DataField>
+        </Field>
+        <Field Name="Unit_Volume">
+          <DataField>Unit_Volume</DataField>
+        </Field>
+        <Field Name="Unit_VolumeFormat">
+          <DataField>Unit_VolumeFormat</DataField>
+        </Field>
+        <Field Name="FechaDisponibilidad">
+          <DataField>FechaDisponibilidad</DataField>
+        </Field>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -685,7 +794,7 @@
                                                                     <Paragraph>
                                                                       <TextRuns>
                                                                         <TextRun>
-                                                                          <Value>=First(Fields!NDoc.Value, "DataSet_Result")</Value>
+                                                                          <Value>=Fields!NDoc.Value</Value>
                                                                           <Style>
                                                                             <FontFamily>Bahnschrift</FontFamily>
                                                                             <FontSize>12pt</FontSize>
@@ -2723,6 +2832,7 @@
                                                 </Style>
                                               </Rectangle>
                                               <ColSpan>8</ColSpan>
+                                              <rd:Selected>true</rd:Selected>
                                             </CellContents>
                                           </TablixCell>
                                           <TablixCell />
@@ -2943,6 +3053,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -3079,113 +3195,4 @@ fwa1VXNx8MvDZ3ddmnpH/wCgCsO6/YZ+Bd4vzfDfTIz/ANMZZof/AEB6945o5quep/MRyQPA7P8AYT+B
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="NDoc">
-          <DataField>NDoc</DataField>
-        </Field>
-        <Field Name="FechaRegistro">
-          <DataField>FechaRegistro</DataField>
-        </Field>
-        <Field Name="NombreCliente">
-          <DataField>NombreCliente</DataField>
-        </Field>
-        <Field Name="NumeroCliente">
-          <DataField>NumeroCliente</DataField>
-        </Field>
-        <Field Name="Direccion">
-          <DataField>Direccion</DataField>
-        </Field>
-        <Field Name="Ciudad">
-          <DataField>Ciudad</DataField>
-        </Field>
-        <Field Name="CodigoPostal">
-          <DataField>CodigoPostal</DataField>
-        </Field>
-        <Field Name="MetodoPago">
-          <DataField>MetodoPago</DataField>
-        </Field>
-        <Field Name="Vencimientos">
-          <DataField>Vencimientos</DataField>
-        </Field>
-        <Field Name="Line_No_">
-          <DataField>Line_No_</DataField>
-        </Field>
-        <Field Name="CodigoProducto">
-          <DataField>CodigoProducto</DataField>
-        </Field>
-        <Field Name="Descripcion">
-          <DataField>Descripcion</DataField>
-        </Field>
-        <Field Name="Cantidad">
-          <DataField>Cantidad</DataField>
-        </Field>
-        <Field Name="CantidadFormat">
-          <DataField>CantidadFormat</DataField>
-        </Field>
-        <Field Name="Precio">
-          <DataField>Precio</DataField>
-        </Field>
-        <Field Name="PrecioFormat">
-          <DataField>PrecioFormat</DataField>
-        </Field>
-        <Field Name="Descuento">
-          <DataField>Descuento</DataField>
-        </Field>
-        <Field Name="DescuentoFormat">
-          <DataField>DescuentoFormat</DataField>
-        </Field>
-        <Field Name="Importe">
-          <DataField>Importe</DataField>
-        </Field>
-        <Field Name="ImporteFormat">
-          <DataField>ImporteFormat</DataField>
-        </Field>
-        <Field Name="Unit_of_Measure_Code">
-          <DataField>Unit_of_Measure_Code</DataField>
-        </Field>
-        <Field Name="BaseImponible">
-          <DataField>BaseImponible</DataField>
-        </Field>
-        <Field Name="BaseImponibleFormat">
-          <DataField>BaseImponibleFormat</DataField>
-        </Field>
-        <Field Name="Cuota">
-          <DataField>Cuota</DataField>
-        </Field>
-        <Field Name="CuotaFormat">
-          <DataField>CuotaFormat</DataField>
-        </Field>
-        <Field Name="IVA">
-          <DataField>IVA</DataField>
-        </Field>
-        <Field Name="IVAFormat">
-          <DataField>IVAFormat</DataField>
-        </Field>
-        <Field Name="Amount_Including_VAT">
-          <DataField>Amount_Including_VAT</DataField>
-        </Field>
-        <Field Name="Amount_Including_VATFormat">
-          <DataField>Amount_Including_VATFormat</DataField>
-        </Field>
-        <Field Name="Unit_Volume">
-          <DataField>Unit_Volume</DataField>
-        </Field>
-        <Field Name="Unit_VolumeFormat">
-          <DataField>Unit_VolumeFormat</DataField>
-        </Field>
-        <Field Name="FechaDisponibilidad">
-          <DataField>FechaDisponibilidad</DataField>
-        </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
