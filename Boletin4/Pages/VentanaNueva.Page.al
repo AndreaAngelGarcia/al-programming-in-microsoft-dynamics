@@ -15,10 +15,20 @@ page 50510 VentanaNuevaAndrea
                 Caption = 'Descripción del trabajo actual';
                 ApplicationArea = All;
                 Editable = false;
+                // AccessByPermission = TableData "Sales Invoice Header" = R;
+
+                trigger OnValidate()
+                var
+                    SalesInvoiceHeader: Record "Sales Invoice Header";
+                begin
+                    SalesInvoiceHeader.Reset();
+                    CurrPage.SetSelectionFilter(SalesInvoiceHeader);
+                    SalesInvoiceHeader.FindSet();
+                end;
             }
-            field(DescripcionNueva; Rec."Work Description")
+            field(NuevaDescripcion; NuevaDescripcionTrabajo)
             {
-                Caption = 'Descripción del trabajo actual';
+                Caption = 'Nueva descripción del trabajo2';
                 ApplicationArea = All;
                 Editable = true;
             }
@@ -43,4 +53,5 @@ page 50510 VentanaNuevaAndrea
 
     var
         myInt: Integer;
+        NuevaDescripcionTrabajo: Text[200];
 }

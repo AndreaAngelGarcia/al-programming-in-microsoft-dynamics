@@ -18,15 +18,15 @@ pageextension 50511 HistoricoFacturasVenta extends "Posted Sales Invoice"
                 RunObject = Page VentanaNuevaAndrea;
                 RunPageLink = "No." = FIELD("No.");
 
-                trigger OnAction()
+                /*trigger OnAction()
                 var
                     SalesInvoiceHeader: Record "Sales Invoice Header";
-                    VentanaNuevaAndrea: Page VentanaNuevaAndrea;
                 begin
                     SalesInvoiceHeader.Reset();
                     CurrPage.SetSelectionFilter(SalesInvoiceHeader);
-                    Page.Run(PAGE::VentanaNuevaAndrea);
-                end;
+                    if SalesInvoiceHeader.FindSet() then
+                        Page.Run(PAGE::VentanaNuevaAndrea);
+                end;*/
             }
         }
     }
