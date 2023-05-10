@@ -7,32 +7,10 @@ page 50510 VentanaNuevaAndrea
     SourceTable = "Sales Invoice Header";
     Permissions = tabledata "Sales Invoice Header" = RIMD;
 
-
     layout
     {
         area(Content)
         {
-            /*trigger OnValidate()
-            var
-                SalesInvoiceHeader: Record "Sales Invoice Header";
-            begin
-                SalesInvoiceHeader.Reset();
-                SalesInvoiceHeader.SetRange("No.", SalesInvoiceHeader."No.");
-                SalesInvoiceHeader.GetBySystemId('Hola Roberto');
-                SalesInvoiceHeader.Get(Rec."Work Description");
-                CurrPage.SetSelectionFilter(SalesInvoiceHeader);
-            end;*/
-            /*begin
-               SalesInvoiceHeader.RESET;
-               SalesInvoiceHeader.SETRANGE("No.", InvoiceNo.VALUE);
-               IF SalesInvoiceHeader.FINDFIRST THEN BEGIN
-                   SalesInvoiceHeader."Work Description" := NuevaDescripcion.VALUE;
-                   SalesInvoiceHeader.MODIFY;
-                   MESSAGE('Descripción del trabajo actualizada.');
-               END ELSE
-                   MESSAGE('No se encontró la factura especificada.');
-           end;*/
-
             field(DescripcionActual; DescripcionActual)
             {
                 Caption = 'Descripción de trabajo actual';
@@ -46,6 +24,16 @@ page 50510 VentanaNuevaAndrea
                 ApplicationArea = All;
                 Editable = true;
                 AccessByPermission = codeunit NuevoCampoDescripcionTrabajo = X;
+
+                trigger OnValidate()
+                var
+                    outStr: OutStream;
+                begin
+                    DescripcionActual := NuevaDescripcionTrabajo;
+                    Rec."Work Description".CreateOutStream(outStr);
+                    outStr.WriteText(NuevaDescripcionTrabajo);
+                    Rec.Modify(true);
+                end;
             }
         }
     }
@@ -69,6 +57,8 @@ page 50510 VentanaNuevaAndrea
     trigger OnAfterGetRecord()
     var
         inStr: InStream;
+        outStr: OutStream;
+        CodeUnit: Codeunit NuevoCampoDescripcionTrabajo;
     begin
         DescripcionActual := '';
         Rec.CalcFields("Work Description");
@@ -78,9 +68,12 @@ page 50510 VentanaNuevaAndrea
         end
         else
             DescripcionActual := 'No existe ninguna descripción';
+
+        /*DescripcionActual := NuevaDescripcionTrabajo;
+        Rec."Work Description".CreateOutStream(outStr);
+        outStr.WriteText(NuevaDescripcionTrabajo);
+        Rec.Modify(true);*/
     end;
-
-
 
     var
         myInt: Integer;
