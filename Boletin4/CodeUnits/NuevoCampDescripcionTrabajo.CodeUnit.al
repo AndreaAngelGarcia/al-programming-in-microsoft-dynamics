@@ -7,33 +7,44 @@ codeunit 50511 NuevoCampoDescripcionTrabajo
 
     end;
 
+    procedure ActualizarDescripcionTrabajo(Rec: Record "Sales Invoice Header"; NuevaDescripcionTrabajo: Text[200])
+    var
+        outStr: OutStream;
+    begin
+        Rec.SetRange("No.", Rec."No.");
+        if Rec.Get(Rec."No.") then begin
+            Rec."Work Description".CreateOutStream(outStr);
+            outStr.WriteText('');
+            Rec."Work Description".CreateOutStream(outStr);
+            outStr.WriteText(NuevaDescripcionTrabajo);
+            Rec.Modify(true);
+        end;
+        /*Rec."Work Description".CreateOutStream(outStr);
+        outStr.WriteText(NuevaDescripcionTrabajo);
+        Rec.Modify(true);*/
+    end;
+
     /// <summary>
     /// Evento que al darle a aceptar modifique el campo de descripción de trabajo
     /// </summary>
-    [EventSubscriber(ObjectType::Page, Page::"VentanaNuevaAndrea", 'OnAfterValidateEvent', 'NuevaDescripcionTrabajo', true, true)]
+    /*[EventSubscriber(ObjectType::Page, Page::"VentanaNuevaAndrea", 'OnAfterValidateEvent', 'NuevaDescripcionTrabajo', true, true)]
+
     local procedure MyProcedure(var Rec: Record "Sales Invoice Header")
     var
-        VentanaNueva: Page VentanaNuevaAndrea;
-        OutStr: OutStream;
-        InStr: InStream;
-    begin
-        Rec.Reset;
-        Rec.CalcFields("Work Description");
-        Rec.Setrange("No.", Rec."No.");
-        if Rec.FindFirst() then begin
 
-            Rec."Work Description".CreateInStream(InStr, TextEncoding::UTF8);
-            //Rec."Work Description".CreateOutStream(OutStr);
-            InStr.ReadText(NuevaDescripcionTrabajo);
-            Rec."Work Description".CreateOutStream(OutStr);
-            Rec.modify(true);
-            Message('Descripción del trabajo actualizada.');
-        end else
-            Message('No se encontró la factura especificada.');
-    end;
+    begin
+
+    end;*/
+
+    /*[EventSubscriber(ObjectType::Page, Page::"VentanaNuevaAndrea", 'OnAfterValidateEvent', 'NuevaDescripcionTrabajo', true, true)]
+    procedure MyProcedure(var Rec: Record "Sales Invoice Header")
+    var
+        NuevaDescripcionTrabajo: Text[200];
+    begin
+        ActualizarDescripcionTrabajo(Rec, NuevaDescripcionTrabajo);
+    end;*/
 
     var
         myInt: Integer;
-        NuevaDescripcionTrabajo: Text[200];
 
 }

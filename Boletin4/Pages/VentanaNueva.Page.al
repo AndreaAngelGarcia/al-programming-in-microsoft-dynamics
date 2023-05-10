@@ -16,23 +16,21 @@ page 50510 VentanaNuevaAndrea
                 Caption = 'Descripción de trabajo actual';
                 ApplicationArea = All;
                 Editable = false;
-                AccessByPermission = codeunit NuevoCampoDescripcionTrabajo = X;
+                //AccessByPermission = codeunit NuevoCampoDescripcionTrabajo = X;
             }
             field(NuevaDescripcionTrabajo; NuevaDescripcionTrabajo)
             {
                 Caption = 'Nueva descripción del trabajo';
                 ApplicationArea = All;
                 Editable = true;
-                AccessByPermission = codeunit NuevoCampoDescripcionTrabajo = X;
+                //AccessByPermission = codeunit NuevoCampoDescripcionTrabajo = X;
 
                 trigger OnValidate()
                 var
-                    outStr: OutStream;
+                    MiCodeunit: Codeunit NuevoCampoDescripcionTrabajo;
                 begin
                     DescripcionActual := NuevaDescripcionTrabajo;
-                    Rec."Work Description".CreateOutStream(outStr);
-                    outStr.WriteText(NuevaDescripcionTrabajo);
-                    Rec.Modify(true);
+                    MiCodeunit.ActualizarDescripcionTrabajo(Rec, NuevaDescripcionTrabajo);
                 end;
             }
         }
