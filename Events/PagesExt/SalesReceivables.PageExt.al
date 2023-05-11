@@ -1,5 +1,6 @@
 pageextension 50504 PaymentApplication extends "Sales & Receivables Setup"
 {
+
     layout
     {
         addlast(General)
