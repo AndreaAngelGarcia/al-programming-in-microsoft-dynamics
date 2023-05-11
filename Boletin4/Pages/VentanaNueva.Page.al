@@ -1,8 +1,6 @@
 page 50510 VentanaNuevaAndrea
 {
     Caption = 'Cambia la descripción de trabajo';
-    //DeleteAllowed = false;
-    //InsertAllowed = false;
     PageType = StandardDialog;
     SourceTable = "Sales Invoice Header";
     Permissions = tabledata "Sales Invoice Header" = RIMD;
@@ -16,22 +14,12 @@ page 50510 VentanaNuevaAndrea
                 Caption = 'Descripción de trabajo actual';
                 ApplicationArea = All;
                 Editable = false;
-                //AccessByPermission = codeunit NuevoCampoDescripcionTrabajo = X;
             }
             field(NuevaDescripcionTrabajo; NuevaDescripcionTrabajo)
             {
                 Caption = 'Nueva descripción del trabajo';
                 ApplicationArea = All;
                 Editable = true;
-                //AccessByPermission = codeunit NuevoCampoDescripcionTrabajo = X;
-
-                trigger OnValidate()
-                var
-                    MiCodeunit: Codeunit NuevoCampoDescripcionTrabajo;
-                begin
-                    DescripcionActual := NuevaDescripcionTrabajo;
-                    MiCodeunit.ActualizarDescripcionTrabajo(Rec, NuevaDescripcionTrabajo);
-                end;
             }
         }
     }
@@ -66,11 +54,17 @@ page 50510 VentanaNuevaAndrea
         end
         else
             DescripcionActual := 'No existe ninguna descripción';
+    end;
 
-        /*DescripcionActual := NuevaDescripcionTrabajo;
-        Rec."Work Description".CreateOutStream(outStr);
-        outStr.WriteText(NuevaDescripcionTrabajo);
-        Rec.Modify(true);*/
+    trigger OnQueryClosePage(CloseAction: Action): Boolean
+    var
+        MiCodeunit: Codeunit NuevoCampoDescripcionTrabajo;
+    begin
+        if CloseAction in [ACTION::Cancel, ACTION::LookupCancel] then
+            exit
+        else
+            DescripcionActual := NuevaDescripcionTrabajo;
+        MiCodeunit.ActualizarDescripcionTrabajo(Rec, NuevaDescripcionTrabajo);
     end;
 
     var
