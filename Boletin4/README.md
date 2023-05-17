@@ -6,20 +6,19 @@
 
 1. Como encargado del departamento de compras/ventas deseo tener la posibilidad de modificar el campo “Descripción del trabajo” en factura registrada, sin necesidad de revertir ni abonar la factura. Esta funcionalidad debe estar parametrizada a través de un campo en la conf de ventas/compras como ya se ha hecho anteriormente.
 
-En detalle:
-Actualmente, la factura registrada no puede ser modificada, ni líneas ni cabecera.
-En bastantes ocasiones el cliente introduce datos en el campo “Descripción del trabajo” en la cabecera de la factura, y ese campo lo mostramos en el informe
-de factura. Como es un campo que no conlleva nada a nivel de registro de movimientos, en muchas ocasiones se quiere cambiar dicho campo y no se puede.
-Se propone poder cambiar este campo a través de una acción nueva en la ficha de la factura de venta registrada.
-De tal manera, que en la página de la factura de venta registrada, pondremos una acción nueva “Modif. Desc. Trabajo”, la cual, nos abrirá una ventana nueva
-donde mostraremos dos campos.
+     En detalle:
+     Actualmente, la factura registrada no puede ser modificada, ni líneas ni cabecera.
+     En bastantes ocasiones el cliente introduce datos en el campo “Descripción del trabajo” en la cabecera de la factura, y ese campo lo mostramos en el informe
+     de factura. Como es un campo que no conlleva nada a nivel de registro de movimientos, en muchas ocasiones se quiere cambiar dicho campo y no se puede.
+     Se propone poder cambiar este campo a través de una acción nueva en la ficha de la factura de venta registrada.
+     De tal manera, que en la página de la factura de venta registrada, pondremos una acción nueva “Modif. Desc. Trabajo”, la cual, nos abrirá una ventana nueva
+     donde mostraremos dos campos.
 
-1. Descripción de trabajo actual (no editable)
+     - Descripción de trabajo actual (no editable)
+     - Descripción de trabajo nueva
 
-2. Descripción de trabajo nueva
-
-Una vez le demos al botón de aceptar a esa ventana, a través de una CodeUnit (con permisos de modificación de cabecera de factura registrada), tendremos el
-proceso de modificación.
+     Una vez le demos al botón de aceptar a esa ventana, a través de una CodeUnit (con permisos de modificación de cabecera de factura registrada), tendremos el
+     proceso de modificación.
 
 2. Como encargado del departamento de compras/ventas deseo ver en las líneas de facturas en color rojo cuando los productos no sean habituales para
 mi Cliente/Proveedor, es decir, el código del producto resaltado en color rojo.
