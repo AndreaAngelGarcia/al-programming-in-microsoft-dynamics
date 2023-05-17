@@ -40,7 +40,6 @@ page 50520 DescripcionTrabajoAndrea
         }
     }
 
-    //
     trigger OnAfterGetRecord()
     var
         inStr: InStream;
@@ -57,7 +56,7 @@ page 50520 DescripcionTrabajoAndrea
             DescripcionActual := 'No existe ninguna descripción';
     end;
 
-    // 
+
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     var
         MiCodeunit: Codeunit CampoDescripcionTrabajoAndrea;

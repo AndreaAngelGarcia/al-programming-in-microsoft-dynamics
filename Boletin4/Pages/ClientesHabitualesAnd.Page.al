@@ -40,13 +40,8 @@ page 50521 ClientesHabitualesPageAnd
     }
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean
-    var
-        SalesLine: Record "Sales Line";
-        SalesHeader: Record "Sales Header";
     begin
-        if Rec.FechaDesde <> 0D then
-            if Rec.FechaHasta = 0D then begin
-                Error('Por favor ingrese un valor en el campo "Fecha hasta" antes de continuar.');
-            end;
+        if (Rec.FechaDesde <> 0D) and (Rec.FechaHasta = 0D) or (Rec.FechaHasta <> 0D) and (Rec.FechaDesde = 0D) then
+            Error('No puedes dejar una fecha sin rellenar')
     end;
 }

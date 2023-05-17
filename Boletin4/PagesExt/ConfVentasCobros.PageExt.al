@@ -19,7 +19,7 @@ pageextension 50520 ConfVentasCobrosAnd extends "Sales & Receivables Setup"
 
     actions
     {
-        // Add changes to page actions here
+
     }
 
     var

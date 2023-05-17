@@ -28,12 +28,10 @@ pageextension 50523 SalesInvoiceSubform extends "Sales Invoice Subform"
         SalesHeader.Get(Rec."Document Type", Rec."Document No.");
         SalesLine.Get(Rec."Document Type", Rec."Document No.", Rec."Line No.");
 
-        // Buscamos si el cliente es habitual
         ClientesHabituales.SetRange(CodigoCliente, SalesHeader."Bill-to Customer No.");
         ClientesHabituales.SetRange(CodigoProducto, SalesLine."No.");
 
         if not ClientesHabituales.FindFirst() then begin
-            // Si no es habitual, cambiar el color del campo a rojo
             StyleExprColor := 'Unfavorable';
             Rec.ClienteHabitual := false;
         end else begin
