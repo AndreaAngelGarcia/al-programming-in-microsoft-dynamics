@@ -7,15 +7,15 @@ pageextension 50530 PageExtListaProveedores extends "Vendor List"
 
     actions
     {
-        addbefore(Action5)
+        addfirst(processing)
         {
             action(CrearNuevoProveedor)
             {
                 ApplicationArea = All;
-                Caption = 'Crear nuevo proveedor';
-                Image = Vendor;
-                /* RunObject = Page ;
-                RunPageLink = ; */
+                Caption = 'Crear nuevo proveedor Andrea';
+                Image = Add;
+                RunObject = Page PageProveedorTeamMember;
+                RunPageLink = "No." = FIELD("No.");
 
                 trigger OnAction()
                 begin
