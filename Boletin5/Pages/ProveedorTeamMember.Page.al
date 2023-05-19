@@ -67,20 +67,16 @@ page 50530 PageProveedorTeamMember
                 {
                     ApplicationArea = All;
                     Importance = Additional;
-                    ShowMandatory = true;
                     ToolTip = 'Specifies the vendor''s trade type to link transactions made for this vendor with the appropriate general ledger account according to the general posting setup.';
                 }
                 field("VAT Bus. Posting Group"; Rec."VAT Bus. Posting Group")
                 {
                     ApplicationArea = All;
-                    Importance = Additional;
                     ToolTip = 'Specifies the VAT specification of the involved customer or vendor to link transactions made for this record with the appropriate general ledger account according to the VAT posting setup.';
                 }
                 field("Vendor Posting Group"; Rec."Vendor Posting Group")
                 {
                     ApplicationArea = All;
-                    Importance = Additional;
-                    ShowMandatory = true;
                     ToolTip = 'Specifies the vendor''s market type to link business transactions made for the vendor with the appropriate account in the general ledger.';
                 }
                 field("Payment Terms Code"; Rec."Payment Terms Code")
@@ -103,5 +99,15 @@ page 50530 PageProveedorTeamMember
     {
 
     }
+
+    trigger OnQueryClosePage(CloseAction: Action): Boolean
+    var
+        myInt: Integer;
+    begin
+
+    end;
+
 }
+
+
 

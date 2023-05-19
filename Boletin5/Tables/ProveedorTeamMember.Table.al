@@ -11,14 +11,11 @@ table 50530 TablaProveedorTeamMember
         field(2; Name; Text[100])
         {
             Caption = 'Nombre';
-            Editable = true;
-            DataClassification = ToBeClassified;
         }
 
         field(3; "No."; Code[20])
         {
             Caption = 'Nº';
-            DataClassification = ToBeClassified;
         }
 
         field(4; NIF; Text[100])
@@ -36,54 +33,36 @@ table 50530 TablaProveedorTeamMember
         {
             Caption = 'Cód. país/región';
             TableRelation = "Country/Region";
-            /*trigger OnValidate()
-            begin
-                PostCode.CheckClearPostCodeCityCounty(City, "Post Code", County, "Country/Region Code", xRec."Country/Region Code");
-
-                if "Country/Region Code" <> xRec."Country/Region Code" then
-                    VATRegistrationValidation();
-            end;*/
         }
 
         field(7; City; Text[30])
         {
-            Caption = 'City';
+            Caption = 'Población';
             TableRelation = IF ("Country/Region Code" = CONST('')) "Post Code".City
             ELSE
             IF ("Country/Region Code" = FILTER(<> '')) "Post Code".City WHERE("Country/Region Code" = FIELD("Country/Region Code"));
-            //This property is currently not supported
-            //TestTableRelation = false;
             ValidateTableRelation = false;
 
-            /*trigger OnLookup()
-            begin
-                OnBeforeLookupCity(Rec, PostCode);
-
-                PostCode.LookupPostCode(City, "Post Code", County, "Country/Region Code");
-
-                OnAfterLookupCity(Rec, PostCode);
-            end;
-
+            // Rellenar el campo Post Code cuando se ponga ciudad
             trigger OnValidate()
             var
-                IsHandled: Boolean;
+                PostCode: Record "Post Code";
             begin
-                IsHandled := false;
-                OnBeforeValidateCity(Rec, PostCode, CurrFieldNo, IsHandled);
-                if not IsHandled then
-                    PostCode.ValidateCity(City, "Post Code", County, "Country/Region Code", (CurrFieldNo <> 0) and GuiAllowed);
-
-                OnAfterValidateCity(Rec, xRec);
-            end;*/
+                if "Country/Region Code" = '' then
+                    exit;
+                PostCode.SetRange("Country/Region Code", "Country/Region Code");
+                PostCode.SetRange(City, City);
+                if PostCode.FindFirst() then
+                    "Post Code" := PostCode.Code;
+            end;
         }
 
         field(8; "Post Code"; Code[20])
         {
+            Caption = 'Código postal';
             TableRelation = IF ("Country/Region Code" = CONST('')) "Post Code"
             ELSE
             IF ("Country/Region Code" = FILTER(<> '')) "Post Code" WHERE("Country/Region Code" = FIELD("Country/Region Code"));
-            //This property is currently not supported
-            //TestTableRelation = false;
             ValidateTableRelation = false;
 
             trigger OnLookup()
@@ -95,26 +74,17 @@ table 50530 TablaProveedorTeamMember
                     "Post Code" := PostCode."Country/Region Code";
             end;
 
-            /*trigger OnLookup()
-            begin
-                OnBeforeLookupPostCode(Rec, "Post Code");
-
-                PostCode.LookupPostCode(City, "Post Code", County, "Country/Region Code");
-
-                OnAfterLookupPostCode(Rec, "Post Code");
-            end;
-
             trigger OnValidate()
             var
-                IsHandled: Boolean;
+                PostCode: Record "Post Code";
             begin
-                IsHandled := false;
-                OnBeforeValidatePostCode(Rec, "Post Code", CurrFieldNo, IsHandled);
-                if not IsHandled then
-                    PostCode.ValidatePostCode(City, "Post Code", County, "Country/Region Code", (CurrFieldNo <> 0) and GuiAllowed);
-
-                OnAfterValidatePostCode(Rec, xRec);
-            end;*/
+                if "Country/Region Code" = '' then
+                    exit;
+                PostCode.SetRange("Country/Region Code", "Country/Region Code");
+                PostCode.SetRange(Code, "Post Code");
+                if PostCode.FindFirst() then
+                    City := PostCode.City;
+            end;
         }
 
         field(9; "E-Mail"; Text[80])
@@ -134,7 +104,7 @@ table 50530 TablaProveedorTeamMember
 
         field(10; "Phone No."; Text[30])
         {
-
+            Caption = 'Nº teléfono';
         }
 
         //FACTURACIÓN
@@ -167,11 +137,6 @@ table 50530 TablaProveedorTeamMember
         {
             Caption = 'Cód. términos pago';
             TableRelation = "Payment Terms";
-
-            /*trigger OnValidate()
-            begin
-                UpdatePaymentTermsId();
-            end;*/
         }
 
         field(15; "Payment Method Code"; Code[10])
@@ -179,7 +144,6 @@ table 50530 TablaProveedorTeamMember
             Caption = 'Cód. forma pago';
             TableRelation = "Payment Method";
         }
-
     }
 
     keys
@@ -189,8 +153,6 @@ table 50530 TablaProveedorTeamMember
             Clustered = true;
         }
     }
-
-
 
     var
         myInt: Integer;
@@ -214,11 +176,5 @@ table 50530 TablaProveedorTeamMember
     begin
 
     end;
-
-    [IntegrationEvent(false, false)]
-    local procedure OnBeforeLookupCity(var Vendor: Record Vendor; var PostCodeRec: Record "Post Code")
-    begin
-    end;
-
 }
 
