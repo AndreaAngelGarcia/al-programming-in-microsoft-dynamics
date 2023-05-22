@@ -5,9 +5,8 @@ page 50530 PageProveedorTeamMember
     UsageCategory = Administration;
     SourceTable = TablaProveedorTeamMember;
     Caption = 'Nuevo Proveedor';
-    //RefreshOnActivate = true;
-    //Editable = true;
-    //Permissions = TableData TablaProveedorTeamMember = RMD;
+    Permissions = tabledata TablaProveedorTeamMember = RIMD;
+    RefreshOnActivate = true;
 
     layout
     {
@@ -18,20 +17,22 @@ page 50530 PageProveedorTeamMember
                 field(Name; Rec.Name)
                 {
                     ApplicationArea = All;
-                    Editable = true;
                 }
-                field("No."; Rec."No.")
+                field("No."; Rec."Cod. Comprador")
                 {
                     ApplicationArea = All;
-                    Editable = true;
                 }
                 field(NIF; Rec.NIF)
                 {
                     ApplicationArea = All;
                 }
+                field(Processed; Rec.Processed)
+                {
+                    ApplicationArea = All;
+                }
             }
 
-            group(DirecciónContacto)
+            group(DireccionContacto)
             {
                 Caption = 'Dirección y contacto';
                 field(Address; Rec.Address)
@@ -97,17 +98,58 @@ page 50530 PageProveedorTeamMember
 
     actions
     {
+        /*area(Processing)
+        {
+            action(ActionName)
+            {
+                ApplicationArea = All;
 
+                trigger OnAction()
+                var
+                    Vendor: Record Vendor;
+                    TeamMemberVendor: Record "TablaProveedorTeamMember";
+                begin
+                    TeamMemberVendor.Get(Rec.ID, Rec."Cod. Comprador");
+                    TeamMemberVendor.SetRange("Cod. Comprador", Vendor."Purchaser Code");
+                    Vendor.Init();
+                    Vendor."Purchaser Code" := TeamMemberVendor."Cod. Comprador";
+                    Vendor.Name := TeamMemberVendor.Name;
+                    Vendor.Address := TeamMemberVendor.Address;
+                    Vendor."Country/Region Code" := TeamMemberVendor."Country/Region Code";
+                    Vendor.City := TeamMemberVendor.City;
+                    Vendor."Post Code" := TeamMemberVendor."Post Code";
+                    Vendor."Phone No." := TeamMemberVendor."Phone No.";
+
+                    Vendor.Insert(true);
+                    Message('No.: %1', TeamMemberVendor."Cod. Comprador");
+                    Message('Name: %1', TeamMemberVendor.Name);
+                    Message('Address: %1', TeamMemberVendor.Address);
+                end;
+            }
+        }*/
     }
 
-    trigger OnQueryClosePage(CloseAction: Action): Boolean
+    trigger OnClosePage()
     var
-        myInt: Integer;
+        TeamMemberVendorRec: Record "TablaProveedorTeamMember";
+        JobQueueEntriesAndrea: Codeunit CrearProveedorAndrea;
     begin
-
+        TeamMemberVendorRec := Rec;
+        JobQueueEntriesAndrea.CrearProveedor(TeamMemberVendorRec);
+        Clear(Rec);
     end;
-
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

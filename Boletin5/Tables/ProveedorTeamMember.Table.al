@@ -13,9 +13,10 @@ table 50530 TablaProveedorTeamMember
             Caption = 'Nombre';
         }
 
-        field(3; "No."; Code[20])
+        field(3; "Cod. Comprador"; Code[20])
         {
-            Caption = 'Nº';
+            Caption = 'Cód. Cliente';
+            TableRelation = Vendor;
         }
 
         field(4; NIF; Text[100])
@@ -144,11 +145,16 @@ table 50530 TablaProveedorTeamMember
             Caption = 'Cód. forma pago';
             TableRelation = "Payment Method";
         }
+
+        field(16; "Processed"; Boolean)
+        {
+            Caption = 'Procesado';
+        }
     }
 
     keys
     {
-        key(PK; ID, "No.")
+        key(PK; ID, "Cod. Comprador")
         {
             Clustered = true;
         }
@@ -157,7 +163,29 @@ table 50530 TablaProveedorTeamMember
     var
         myInt: Integer;
 
+    /*procedure CreateVendor()
+    var
+        Vendor: Record Vendor;
+    begin
+        //Rec.Get(ID, "Cod. Comprador");
+        Rec.SetRange("Cod. Comprador", Vendor."Purchaser Code");
+        Vendor.Init();
+        Vendor."Purchaser Code" := Rec."Cod. Comprador";
+        Vendor.Name := Rec.Name;
+        Vendor.Address := Rec.Address;
+        Vendor."Country/Region Code" := Rec."Country/Region Code";
+        Vendor.City := Rec.City;
+        Vendor."Post Code" := Rec."Post Code";
+        Vendor."Phone No." := Rec."Phone No.";
+
+        Vendor.Insert(true);
+        Message('No.: %1', Rec."Cod. Comprador");
+        Message('Name: %1', Rec.Name);
+        Message('Address: %1', Rec.Address);
+    end;*/
+
     trigger OnInsert()
+
     begin
 
     end;

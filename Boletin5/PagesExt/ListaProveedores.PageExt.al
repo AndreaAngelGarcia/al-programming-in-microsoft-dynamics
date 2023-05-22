@@ -14,12 +14,13 @@ pageextension 50530 PageExtListaProveedores extends "Vendor List"
                 ApplicationArea = All;
                 Caption = 'Crear nuevo proveedor Andrea';
                 Image = Add;
-                RunObject = Page PageProveedorTeamMember;
-                RunPageLink = "No." = FIELD("No.");
 
                 trigger OnAction()
+                var
+                    TeamMember: Record TablaProveedorTeamMember;
                 begin
-
+                    TeamMember.Init();
+                    Page.Run(PAGE::PageProveedorTeamMember);
                 end;
             }
         }
@@ -28,3 +29,6 @@ pageextension 50530 PageExtListaProveedores extends "Vendor List"
     var
         myInt: Integer;
 }
+
+
+
