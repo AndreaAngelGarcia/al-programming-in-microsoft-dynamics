@@ -1,11 +1,25 @@
 codeunit 50530 CrearProveedorAndrea
 {
-    procedure CrearProveedor(TeamMemberVendorRec: Record "TablaProveedorTeamMember")
+    trigger OnRun()
     var
-        Vendor: Record Vendor;
         TeamMemberVendor: Record "TablaProveedorTeamMember";
     begin
+        TeamMemberVendor.SetFilter(Processed, 'No');
+        if TeamMemberVendor.FindSet() then
+            repeat
+                CrearProveedor(TeamMemberVendor);
+                TeamMemberVendor.Processed := true;
+                TeamMemberVendor.Modify();
+            until TeamMemberVendor.Next() = 0;
+    end;
+
+    procedure CrearProveedor(TeamMemberVendorRec: Record "TablaProveedorTeamMember")
+    var
+        TeamMemberVendor: Record "TablaProveedorTeamMember";
+        Vendor: Record Vendor;
+    begin
         TeamMemberVendor.SetRange("Cod. Comprador", Vendor."Purchaser Code");
+
         Vendor.Init();
         Vendor."Purchaser Code" := TeamMemberVendorRec."Cod. Comprador";
         Vendor.Name := TeamMemberVendorRec.Name;
@@ -16,24 +30,72 @@ codeunit 50530 CrearProveedorAndrea
         Vendor."Phone No." := TeamMemberVendorRec."Phone No.";
 
         Vendor.Insert(true);
-
-        TeamMemberVendor.ClearMarks();
-        TeamMemberVendorRec.ClearMarks();
-        /*Message('No.: %1', TeamMemberVendorRec."Cod. Comprador");
-        Message('Name: %1', TeamMemberVendorRec.Name);
-        Message('Address: %1', TeamMemberVendorRec.Address);*/
     end;
-
-    [EventSubscriber(ObjectType::Page, Page::"PageProveedorTeamMember", 'OnOpenPageEvent', '', true, true)]
-    local procedure MyProcedure()
-    var
-        Proveedor: Page PageProveedorTeamMember;
-        TablaProveedor: Record TablaProveedorTeamMember;
-    begin
-        Clear(Proveedor);
-    end;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

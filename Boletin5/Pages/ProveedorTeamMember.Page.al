@@ -59,6 +59,17 @@ page 50530 PageProveedorTeamMember
                 {
                     ApplicationArea = All;
                 }
+                group(Contacto)
+                {
+                    field("Primary Contact No."; Rec."Primary Contact No.")
+                    {
+                        ApplicationArea = All;
+                    }
+                    field(Contact; Rec.Contact)
+                    {
+                        ApplicationArea = All;
+                    }
+                }
             }
 
             group(Facturacion)
@@ -98,46 +109,37 @@ page 50530 PageProveedorTeamMember
 
     actions
     {
-        /*area(Processing)
+        /*area(processing)
         {
-            action(ActionName)
+            action(ClearFields)
             {
                 ApplicationArea = All;
+                Caption = 'Limpiar campos';
 
                 trigger OnAction()
-                var
-                    Vendor: Record Vendor;
-                    TeamMemberVendor: Record "TablaProveedorTeamMember";
                 begin
-                    TeamMemberVendor.Get(Rec.ID, Rec."Cod. Comprador");
-                    TeamMemberVendor.SetRange("Cod. Comprador", Vendor."Purchaser Code");
-                    Vendor.Init();
-                    Vendor."Purchaser Code" := TeamMemberVendor."Cod. Comprador";
-                    Vendor.Name := TeamMemberVendor.Name;
-                    Vendor.Address := TeamMemberVendor.Address;
-                    Vendor."Country/Region Code" := TeamMemberVendor."Country/Region Code";
-                    Vendor.City := TeamMemberVendor.City;
-                    Vendor."Post Code" := TeamMemberVendor."Post Code";
-                    Vendor."Phone No." := TeamMemberVendor."Phone No.";
-
-                    Vendor.Insert(true);
-                    Message('No.: %1', TeamMemberVendor."Cod. Comprador");
-                    Message('Name: %1', TeamMemberVendor.Name);
-                    Message('Address: %1', TeamMemberVendor.Address);
+                    Rec.Init();
+                    CurrPage.Update();
                 end;
             }
         }*/
     }
 
-    trigger OnClosePage()
+
+    trigger OnOpenPage()
+    begin
+        Rec.Init();
+        CurrPage.Update();
+    end;
+
+    /*trigger OnClosePage()
     var
         TeamMemberVendorRec: Record "TablaProveedorTeamMember";
         JobQueueEntriesAndrea: Codeunit CrearProveedorAndrea;
     begin
         TeamMemberVendorRec := Rec;
         JobQueueEntriesAndrea.CrearProveedor(TeamMemberVendorRec);
-        Clear(Rec);
-    end;
+    end;*/
 }
 
 

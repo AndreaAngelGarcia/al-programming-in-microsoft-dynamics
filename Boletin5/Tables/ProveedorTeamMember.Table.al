@@ -16,7 +16,7 @@ table 50530 TablaProveedorTeamMember
         field(3; "Cod. Comprador"; Code[20])
         {
             Caption = 'Cód. Cliente';
-            TableRelation = Vendor;
+            TableRelation = "Salesperson/Purchaser";
         }
 
         field(4; NIF; Text[100])
@@ -150,6 +150,102 @@ table 50530 TablaProveedorTeamMember
         {
             Caption = 'Procesado';
         }
+
+        // BONUS 1: CONTACTO
+        field(17; "Primary Contact No."; Code[20])
+        {
+            Caption = 'Código del contacto';
+            TableRelation = Contact;
+
+            /*trigger OnLookup()
+            var
+                Cont: Record Contact;
+                ContBusRel: Record "Contact Business Relation";
+                TempVend: Record Vendor temporary;
+            begin
+                ContBusRel.SetCurrentKey("Link to Table", "No.");
+                ContBusRel.SetRange("Link to Table", ContBusRel."Link to Table"::Vendor);
+                ContBusRel.SetRange("No.", "No.");
+                if ContBusRel.FindFirst() then
+                    Cont.SetRange("Company No.", ContBusRel."Contact No.")
+                else
+                    Cont.SetRange("No.", '');
+
+                if "Primary Contact No." <> '' then
+                    if Cont.Get("Primary Contact No.") then;
+                if PAGE.RunModal(0, Cont) = ACTION::LookupOK then begin
+                    TempVend.Copy(Rec);
+                    Find();
+                    TransferFields(TempVend, false);
+                    Validate("Primary Contact No.", Cont."No.");
+                end;
+            end;
+
+            trigger OnValidate()
+            var
+                Cont: Record Contact;
+                ContBusRel: Record "Contact Business Relation";
+            begin
+                Contact := '';
+                if "Primary Contact No." <> '' then begin
+                    Cont.Get("Primary Contact No.");
+
+                    ContBusRel.FindOrRestoreContactBusinessRelation(Cont, Rec, ContBusRel."Link to Table"::Vendor);
+
+                    if Cont."Company No." <> ContBusRel."Contact No." then
+                        Error(Text004, Cont."No.", Cont.Name, "No.", Name);
+
+                    if Cont.Type = Cont.Type::Person then begin
+                        Contact := Cont.Name;
+                        exit;
+                    end;
+
+                    if Cont."Phone No." <> '' then
+                        "Phone No." := Cont."Phone No.";
+                    if Cont."E-Mail" <> '' then
+                        "E-Mail" := Cont."E-Mail";
+                end;
+            end;*/
+        }
+        field(18; Contact; Text[100])
+        {
+            Caption = 'Contacto';
+
+            /*trigger OnLookup()
+            var
+                ContactBusinessRelation: Record "Contact Business Relation";
+                Cont: Record Contact;
+                TempVend: Record Vendor temporary;
+            begin
+                if ContactBusinessRelation.FindByRelation(ContactBusinessRelation."Link to Table"::Vendor, "No.") then
+                    Cont.SetRange("Company No.", ContactBusinessRelation."Contact No.")
+                else
+                    Cont.SetRange("Company No.", '');
+
+                if "Primary Contact No." <> '' then
+                    if Cont.Get("Primary Contact No.") then;
+                if PAGE.RunModal(0, Cont) = ACTION::LookupOK then begin
+                    TempVend.Copy(Rec);
+                    Find();
+                    TransferFields(TempVend, false);
+                    Validate("Primary Contact No.", Cont."No.");
+                end;
+            end;
+
+            trigger OnValidate()
+            begin
+                if RMSetup.Get() then
+                    if RMSetup."Bus. Rel. Code for Vendors" <> '' then begin
+                        if (xRec.Contact = '') and (xRec."Primary Contact No." = '') and (Contact <> '') then begin
+                            Modify();
+                            UpdateContFromVend.OnModify(Rec);
+                            UpdateContFromVend.InsertNewContactPerson(Rec, false);
+                            Modify(true);
+                        end;
+                        exit;
+                    end;
+            end;*/
+        }
     }
 
     keys
@@ -163,26 +259,6 @@ table 50530 TablaProveedorTeamMember
     var
         myInt: Integer;
 
-    /*procedure CreateVendor()
-    var
-        Vendor: Record Vendor;
-    begin
-        //Rec.Get(ID, "Cod. Comprador");
-        Rec.SetRange("Cod. Comprador", Vendor."Purchaser Code");
-        Vendor.Init();
-        Vendor."Purchaser Code" := Rec."Cod. Comprador";
-        Vendor.Name := Rec.Name;
-        Vendor.Address := Rec.Address;
-        Vendor."Country/Region Code" := Rec."Country/Region Code";
-        Vendor.City := Rec.City;
-        Vendor."Post Code" := Rec."Post Code";
-        Vendor."Phone No." := Rec."Phone No.";
-
-        Vendor.Insert(true);
-        Message('No.: %1', Rec."Cod. Comprador");
-        Message('Name: %1', Rec.Name);
-        Message('Address: %1', Rec.Address);
-    end;*/
 
     trigger OnInsert()
 
