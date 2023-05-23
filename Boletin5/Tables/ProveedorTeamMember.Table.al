@@ -18,10 +18,22 @@ table 50530 TablaProveedorTeamMember
             Caption = 'Cód. Cliente';
             TableRelation = "Salesperson/Purchaser";
         }
-
-        field(4; NIF; Text[100])
+        field(86; "VAT Registration No."; Text[20])
         {
-            Caption = 'NIF/CIF';
+            Caption = 'CIF/NIF';
+
+            /*trigger OnValidate()
+            var
+                IsHandled: Boolean;
+            begin
+                IsHandled := false;
+                OnBeforeValidateVATRegistrationNo(Rec, xRec, CurrFieldNo, IsHandled);
+                if IsHandled then
+                    exit;
+                "VAT Registration No." := UpperCase("VAT Registration No.");
+                if "VAT Registration No." <> xRec."VAT Registration No." then
+                    VATRegistrationValidation();
+            end;*/
         }
 
         //DIRECCIÓN Y CONTACTO
@@ -154,10 +166,10 @@ table 50530 TablaProveedorTeamMember
         // BONUS 1: CONTACTO
         field(17; "Primary Contact No."; Code[20])
         {
-            Caption = 'Código del contacto';
-            TableRelation = Contact;
+            Caption = 'Código del contacto principal';
+            TableRelation = "Contact Business Relation";
 
-            /*trigger OnLookup()
+            trigger OnLookup()
             var
                 Cont: Record Contact;
                 ContBusRel: Record "Contact Business Relation";
@@ -165,7 +177,7 @@ table 50530 TablaProveedorTeamMember
             begin
                 ContBusRel.SetCurrentKey("Link to Table", "No.");
                 ContBusRel.SetRange("Link to Table", ContBusRel."Link to Table"::Vendor);
-                ContBusRel.SetRange("No.", "No.");
+                ContBusRel.SetRange("No.", "Cod. Comprador");
                 if ContBusRel.FindFirst() then
                     Cont.SetRange("Company No.", ContBusRel."Contact No.")
                 else
@@ -193,8 +205,8 @@ table 50530 TablaProveedorTeamMember
                     ContBusRel.FindOrRestoreContactBusinessRelation(Cont, Rec, ContBusRel."Link to Table"::Vendor);
 
                     if Cont."Company No." <> ContBusRel."Contact No." then
-                        Error(Text004, Cont."No.", Cont.Name, "No.", Name);
-
+                        Error('Error', Cont."No.", Cont.Name, "Cod. Comprador", Name);
+                    //Text004
                     if Cont.Type = Cont.Type::Person then begin
                         Contact := Cont.Name;
                         exit;
@@ -205,19 +217,21 @@ table 50530 TablaProveedorTeamMember
                     if Cont."E-Mail" <> '' then
                         "E-Mail" := Cont."E-Mail";
                 end;
-            end;*/
+            end;
         }
+
+
         field(18; Contact; Text[100])
         {
             Caption = 'Contacto';
 
-            /*trigger OnLookup()
+            trigger OnLookup()
             var
                 ContactBusinessRelation: Record "Contact Business Relation";
                 Cont: Record Contact;
                 TempVend: Record Vendor temporary;
             begin
-                if ContactBusinessRelation.FindByRelation(ContactBusinessRelation."Link to Table"::Vendor, "No.") then
+                if ContactBusinessRelation.FindByRelation(ContactBusinessRelation."Link to Table"::Vendor, "Cod. Comprador") then
                     Cont.SetRange("Company No.", ContactBusinessRelation."Contact No.")
                 else
                     Cont.SetRange("Company No.", '');
@@ -233,18 +247,23 @@ table 50530 TablaProveedorTeamMember
             end;
 
             trigger OnValidate()
+            var
+                RMSetup: Record "Marketing Setup";
+                UpdateContFromVend: Codeunit "VendCont-Update";
+                Vendor: Record Vendor;
+
             begin
                 if RMSetup.Get() then
                     if RMSetup."Bus. Rel. Code for Vendors" <> '' then begin
                         if (xRec.Contact = '') and (xRec."Primary Contact No." = '') and (Contact <> '') then begin
                             Modify();
-                            UpdateContFromVend.OnModify(Rec);
-                            UpdateContFromVend.InsertNewContactPerson(Rec, false);
+                            UpdateContFromVend.OnModify(Vendor);
+                            UpdateContFromVend.InsertNewContactPerson(Vendor, false);
                             Modify(true);
                         end;
                         exit;
                     end;
-            end;*/
+            end;
         }
     }
 
@@ -281,4 +300,5 @@ table 50530 TablaProveedorTeamMember
 
     end;
 }
+
 

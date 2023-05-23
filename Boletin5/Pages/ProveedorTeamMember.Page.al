@@ -22,13 +22,18 @@ page 50530 PageProveedorTeamMember
                 {
                     ApplicationArea = All;
                 }
-                field(NIF; Rec.NIF)
+                field("VAT Registration No."; Rec."VAT Registration No.")
                 {
-                    ApplicationArea = All;
-                }
-                field(Processed; Rec.Processed)
-                {
-                    ApplicationArea = All;
+                    ApplicationArea = VAT;
+                    ToolTip = 'Specifies the vendor''s VAT registration number.';
+
+                    trigger OnDrillDown()
+                    var
+                        VATRegistrationLogMgt: Codeunit "VAT Registration Log Mgt.";
+                        Vendor: Record Vendor;
+                    begin
+                        VATRegistrationLogMgt.AssistEditVendorVATReg(Vendor);
+                    end;
                 }
             }
 
@@ -59,7 +64,7 @@ page 50530 PageProveedorTeamMember
                 {
                     ApplicationArea = All;
                 }
-                group(Contacto)
+                /*group(Contacto)
                 {
                     field("Primary Contact No."; Rec."Primary Contact No.")
                     {
@@ -69,7 +74,7 @@ page 50530 PageProveedorTeamMember
                     {
                         ApplicationArea = All;
                     }
-                }
+                }*/
             }
 
             group(Facturacion)
@@ -109,20 +114,7 @@ page 50530 PageProveedorTeamMember
 
     actions
     {
-        /*area(processing)
-        {
-            action(ClearFields)
-            {
-                ApplicationArea = All;
-                Caption = 'Limpiar campos';
 
-                trigger OnAction()
-                begin
-                    Rec.Init();
-                    CurrPage.Update();
-                end;
-            }
-        }*/
     }
 
 
@@ -131,16 +123,17 @@ page 50530 PageProveedorTeamMember
         Rec.Init();
         CurrPage.Update();
     end;
-
-    /*trigger OnClosePage()
-    var
-        TeamMemberVendorRec: Record "TablaProveedorTeamMember";
-        JobQueueEntriesAndrea: Codeunit CrearProveedorAndrea;
-    begin
-        TeamMemberVendorRec := Rec;
-        JobQueueEntriesAndrea.CrearProveedor(TeamMemberVendorRec);
-    end;*/
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
