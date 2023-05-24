@@ -18,7 +18,8 @@ table 50530 TablaProveedorTeamMember
             Caption = 'Cód. Cliente';
             TableRelation = "Salesperson/Purchaser";
         }
-        field(86; "VAT Registration No."; Text[20])
+
+        field(4; "VAT Registration No."; Text[20])
         {
             Caption = 'CIF/NIF';
 

@@ -17,15 +17,17 @@ page 50530 PageProveedorTeamMember
                 field(Name; Rec.Name)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica el el nombre del proveedor.';
                 }
                 field("No."; Rec."Cod. Comprador")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica el código del comprador.';
                 }
                 field("VAT Registration No."; Rec."VAT Registration No.")
                 {
                     ApplicationArea = VAT;
-                    ToolTip = 'Specifies the vendor''s VAT registration number.';
+                    ToolTip = 'Especifica el DNI del proveedor.';
 
                     trigger OnDrillDown()
                     var
@@ -43,6 +45,7 @@ page 50530 PageProveedorTeamMember
                 field(Address; Rec.Address)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica la dirección del proveedor.';
                 }
                 field("Country/Region Code"; Rec."Country/Region Code")
                 {
@@ -64,17 +67,6 @@ page 50530 PageProveedorTeamMember
                 {
                     ApplicationArea = All;
                 }
-                /*group(Contacto)
-                {
-                    field("Primary Contact No."; Rec."Primary Contact No.")
-                    {
-                        ApplicationArea = All;
-                    }
-                    field(Contact; Rec.Contact)
-                    {
-                        ApplicationArea = All;
-                    }
-                }*/
             }
 
             group(Facturacion)
@@ -106,45 +98,10 @@ page 50530 PageProveedorTeamMember
                 }
             }
         }
-        area(Factboxes)
-        {
-
-        }
     }
 
     actions
     {
 
     }
-
-
-    trigger OnOpenPage()
-    begin
-        Rec.Init();
-        CurrPage.Update();
-    end;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
