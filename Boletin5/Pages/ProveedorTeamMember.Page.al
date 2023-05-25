@@ -29,13 +29,13 @@ page 50530 PageProveedorTeamMember
                     ApplicationArea = VAT;
                     ToolTip = 'Especifica el DNI del proveedor.';
 
-                    trigger OnDrillDown()
+                    /*trigger OnDrillDown()
                     var
                         VATRegistrationLogMgt: Codeunit "VAT Registration Log Mgt.";
                         Vendor: Record Vendor;
                     begin
                         VATRegistrationLogMgt.AssistEditVendorVATReg(Vendor);
-                    end;
+                    end;*/
                 }
             }
 

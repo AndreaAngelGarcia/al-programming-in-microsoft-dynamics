@@ -1,5 +1,7 @@
 table 50530 TablaProveedorTeamMember
 {
+    DataCaptionFields = "ID", "Name";
+
     fields
     {
         field(1; ID; Integer)
@@ -22,6 +24,7 @@ table 50530 TablaProveedorTeamMember
         field(4; "VAT Registration No."; Text[20])
         {
             Caption = 'CIF/NIF';
+            TableRelation = "VAT Registration Log";
 
             /*trigger OnValidate()
             var
@@ -301,5 +304,8 @@ table 50530 TablaProveedorTeamMember
 
     end;
 }
+
+
+
 
 
