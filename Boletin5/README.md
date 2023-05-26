@@ -16,11 +16,8 @@ Una vez creado varios registros de clientes teammember, debemos tener una Codeun
 Cuando la ejecutemos, veremos que itera los teammember y crea los correspondientes clientes/proveedores. Este CU la ejecutaría en producción un usuario con permisos pero en nuestro caso podemos todos.
 Después registraremos alguna factura con este cliente/proveedor que se haya creado nuevo a partir del proceso.
 
-——————————————————————————————————————
 
-                  BONUS
-
-——————————————————————————————————————
+#### BONUS 
 
 Ejercicio extra 1. Un cliente/proveedor puede tener varios contactos asociados, debemos crearle el contacto asociado en el mismo proceso como si fuera el estándar, que siempre los crea. Importante: Imitar el estándar a la hora de crear cliente/proveedor.
 
