@@ -51,6 +51,7 @@ codeunit 50530 CrearProveedorAndrea
         Vendor."Payment Terms Code" := TeamMemberVendorRec."Payment Terms Code";
         Vendor.Insert(true);
 
+        // Asignar el valor a IDPK y guardar el cambio en la base de datos
         Vendor.IDPK := TeamMemberVendorRec.ID;
         Vendor.Modify();
 
@@ -63,16 +64,13 @@ codeunit 50530 CrearProveedorAndrea
         end;
     end;
 
+
     procedure ModificarProveedor(TeamMemberVendorRec: Record "TablaProveedorTeamMember")
     var
         Vendor: Record Vendor;
     begin
-        TeamMemberVendorRec.SetRange(ID, Vendor.IDPK);
-        // Buscar el registro del proveedor existente
-        //Vendor.SetRange(IDPK, TeamMemberVendorRec.ID);
-        //Vendor.SetRange(Name, TeamMemberVendorRec.Name);
-        if TeamMemberVendorRec.FindFirst() then begin
-            // Modificar los campos del registro del proveedor
+        Vendor.SetRange(IDPK, TeamMemberVendorRec.ID);
+        if Vendor.FindFirst() then begin
             Vendor.Name := TeamMemberVendorRec.Name;
             Vendor."Purchaser Code" := TeamMemberVendorRec."Cod. Comprador";
             Vendor."VAT Registration No." := TeamMemberVendorRec."VAT Registration No.";
@@ -88,11 +86,8 @@ codeunit 50530 CrearProveedorAndrea
             Vendor."Payment Method Code" := TeamMemberVendorRec."Payment Method Code";
             Vendor."Payment Terms Code" := TeamMemberVendorRec."Payment Terms Code";
 
-            // Guardar los cambios en el registro del proveedor
             Vendor.Modify();
-        end else begin
-            Message('No se encontró el registro del proveedor');
         end;
     end;
-
 }
+

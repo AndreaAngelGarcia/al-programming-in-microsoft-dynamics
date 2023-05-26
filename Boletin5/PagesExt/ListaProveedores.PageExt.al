@@ -2,27 +2,14 @@ pageextension 50530 PageExtListaProveedores extends "Vendor List"
 {
     layout
     {
-        addfirst(Control1)
+        /*addfirst(Control1)
         {
             field(ID; Rec.IDPK)
             {
                 Caption = 'ID';
                 ApplicationArea = All;
-
-                /*trigger OnValidate()
-                var
-                    TeamMember: Record TablaProveedorTeamMember;
-                begin
-                    Message('Hola');
-                    TeamMember.SetRange(ID, Rec.IDPK);
-                    TeamMember.SetRange(Name, Rec.Name);
-                    if TeamMember.FindFirst() then begin
-                        Rec.IDPK := TeamMember.ID;
-                        Rec.Modify();
-                    end;
-                end;*/
             }
-        }
+        }*/
     }
 
     actions
