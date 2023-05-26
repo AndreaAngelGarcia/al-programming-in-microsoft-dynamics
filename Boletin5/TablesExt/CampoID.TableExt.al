@@ -12,8 +12,3 @@ tableextension 50530 CampoID extends Vendor
         myInt: Integer;
 }
 
-
-
-
-
-

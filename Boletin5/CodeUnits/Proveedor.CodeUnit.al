@@ -13,13 +13,10 @@ codeunit 50530 CrearProveedorAndrea
                 TeamMemberVendor.Modify();
             until TeamMemberVendor.Next() = 0;
         end else begin
-            // Buscar registros procesados donde SystemModifiedAt > SystemCreatedAt
             TeamMemberVendor.SetRange(Processed, true);
             TeamMemberVendor.SetFilter(SystemModifiedAt, '> %1', TeamMemberVendor.SystemCreatedAt);
             if TeamMemberVendor.FindSet() then begin
-                Message('He entrado jeje');
                 repeat
-                    // Llamar a la función ModificarProveedor para cada registro encontrado
                     ModificarProveedor(TeamMemberVendor);
                 until TeamMemberVendor.Next() = 0;
             end;
@@ -51,7 +48,6 @@ codeunit 50530 CrearProveedorAndrea
         Vendor."Payment Terms Code" := TeamMemberVendorRec."Payment Terms Code";
         Vendor.Insert(true);
 
-        // Asignar el valor a IDPK y guardar el cambio en la base de datos
         Vendor.IDPK := TeamMemberVendorRec.ID;
         Vendor.Modify();
 
@@ -64,7 +60,9 @@ codeunit 50530 CrearProveedorAndrea
         end;
     end;
 
-
+    /// <summary>
+    /// Procedure para modificar un proveedor si el procesado es true y si la fecha de modificación es mayor
+    /// </summary>
     procedure ModificarProveedor(TeamMemberVendorRec: Record "TablaProveedorTeamMember")
     var
         Vendor: Record Vendor;

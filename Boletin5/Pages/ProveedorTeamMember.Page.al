@@ -28,17 +28,8 @@ page 50530 PageProveedorTeamMember
                 {
                     ApplicationArea = VAT;
                     ToolTip = 'Especifica el DNI del proveedor.';
-
-                    /*trigger OnDrillDown()
-                    var
-                        VATRegistrationLogMgt: Codeunit "VAT Registration Log Mgt.";
-                        Vendor: Record Vendor;
-                    begin
-                        VATRegistrationLogMgt.AssistEditVendorVATReg(Vendor);
-                    end;*/
                 }
             }
-
             group(DireccionContacto)
             {
                 Caption = 'Dirección y contacto';
@@ -50,25 +41,29 @@ page 50530 PageProveedorTeamMember
                 field("Country/Region Code"; Rec."Country/Region Code")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica el código de País o región';
                 }
                 field(City; Rec.City)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica la población';
                 }
                 field("Post Code"; Rec."Post Code")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica el código postal';
                 }
                 field("E-Mail"; Rec."E-Mail")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica el email';
                 }
                 field("Phone No."; Rec."Phone No.")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica el número de teléfono';
                 }
             }
-
             group(Facturacion)
             {
                 Caption = 'Facturación';
@@ -76,25 +71,27 @@ page 50530 PageProveedorTeamMember
                 {
                     ApplicationArea = All;
                     Importance = Additional;
-                    ToolTip = 'Specifies the vendor''s trade type to link transactions made for this vendor with the appropriate general ledger account according to the general posting setup.';
+                    ToolTip = 'Especifica el tipo de operación del proveedor para vincular las transacciones realizadas para este proveedor con la cuenta de contabilidad general adecuada según la configuración de contabilización general.';
                 }
                 field("VAT Bus. Posting Group"; Rec."VAT Bus. Posting Group")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the VAT specification of the involved customer or vendor to link transactions made for this record with the appropriate general ledger account according to the VAT posting setup.';
+                    ToolTip = 'Especifica la especificación de IVA del cliente o proveedor involucrado para vincular las transacciones realizadas para este registro con la cuenta de contabilidad general adecuada según la configuración de contabilización del IVA.';
                 }
                 field("Vendor Posting Group"; Rec."Vendor Posting Group")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the vendor''s market type to link business transactions made for the vendor with the appropriate account in the general ledger.';
+                    ToolTip = 'Especifica el tipo de mercado del proveedor para vincular las transacciones comerciales realizadas para el proveedor con la cuenta adecuada en la contabilidad general.';
                 }
                 field("Payment Terms Code"; Rec."Payment Terms Code")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica los términos de pago';
                 }
                 field("Payment Method Code"; Rec."Payment Method Code")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Especifica el código de forma de pago';
                 }
             }
         }
@@ -105,3 +102,11 @@ page 50530 PageProveedorTeamMember
 
     }
 }
+
+
+
+
+
+
+
+

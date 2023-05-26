@@ -24,20 +24,7 @@ table 50530 TablaProveedorTeamMember
         field(4; "VAT Registration No."; Text[20])
         {
             Caption = 'CIF/NIF';
-            TableRelation = "VAT Registration Log";
-
-            /*trigger OnValidate()
-            var
-                IsHandled: Boolean;
-            begin
-                IsHandled := false;
-                OnBeforeValidateVATRegistrationNo(Rec, xRec, CurrFieldNo, IsHandled);
-                if IsHandled then
-                    exit;
-                "VAT Registration No." := UpperCase("VAT Registration No.");
-                if "VAT Registration No." <> xRec."VAT Registration No." then
-                    VATRegistrationValidation();
-            end;*/
+            //TableRelation = "VAT Registration Log";
         }
 
         //DIRECCIÓN Y CONTACTO
@@ -129,13 +116,6 @@ table 50530 TablaProveedorTeamMember
         {
             Caption = 'Grupo contable neg. gen.';
             TableRelation = "Gen. Business Posting Group";
-
-            /*trigger OnValidate()
-            begin
-                if xRec."Gen. Bus. Posting Group" <> "Gen. Bus. Posting Group" then
-                    if GenBusPostingGrp.ValidateVatBusPostingGroup(GenBusPostingGrp, "Gen. Bus. Posting Group") then
-                        Validate("VAT Bus. Posting Group", GenBusPostingGrp."Def. VAT Bus. Posting Group");
-            end;*/
         }
 
         field(12; "VAT Bus. Posting Group"; Code[20])
@@ -304,7 +284,3 @@ table 50530 TablaProveedorTeamMember
 
     end;
 }
-
-
-
-
