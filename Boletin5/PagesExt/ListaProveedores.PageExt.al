@@ -41,7 +41,6 @@ pageextension 50530 PageExtListaProveedores extends "Vendor List"
                 var
                     JobQueueEntry: Record "Job Queue Entry";
                 begin
-                    // Verificamos si la codeunit ya existe
                     JobQueueEntry.SetRange("Object Type to Run", JobQueueEntry."Object Type to Run"::Codeunit);
                     JobQueueEntry.SetRange("Object ID to Run", 50530);
                     if not JobQueueEntry.FindFirst() then begin
@@ -52,9 +51,9 @@ pageextension 50530 PageExtListaProveedores extends "Vendor List"
                         JobQueueEntry.Description := 'CrearProveedorAndrea';
                         JobQueueEntry.Status := JobQueueEntry.Status::"On Hold";
                         JobQueueEntry.Insert(true);
-                        Message('La codeunit "CrearProveedorAndrea" se ha agregado correctamente a la cola de trabajos.');
+                        Message('La codeunit "CrearProveedorAndrea" se ha agregado correctamente a la cola de proyecto.');
                     end else begin
-                        Message('La codeunit "CrearProveedorAndrea" ya existe en la cola de trabajos.');
+                        Message('La codeunit "CrearProveedorAndrea" ya existe en la cola de proyecto.');
                     end;
                 end;
             }
