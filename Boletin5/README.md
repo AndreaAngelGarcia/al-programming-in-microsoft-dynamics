@@ -17,8 +17,11 @@ Cuando la ejecutemos, veremos que itera los teammember y crea los correspondient
 Después registraremos alguna factura con este cliente/proveedor que se haya creado nuevo a partir del proceso.
 
 ——————————————————————————————————————
+
                   BONUS
+
 ——————————————————————————————————————
+
 Ejercicio extra 1. Un cliente/proveedor puede tener varios contactos asociados, debemos crearle el contacto asociado en el mismo proceso como si fuera el estándar, que siempre los crea. Importante: Imitar el estándar a la hora de crear cliente/proveedor.
 
 Ejercicio extra 2. La codeunit se crea automáticamente con un botón en la misma página de clientes/proveedores. Debe facilitarnos la instalación de este proceso.
