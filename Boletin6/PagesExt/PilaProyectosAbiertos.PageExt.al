@@ -2,7 +2,7 @@ pageextension 50300 ProyectosAbiertosAnd extends "O365 Activities"
 {
     layout
     {
-        /*addlast(content)
+        addlast(content)
         {
             cuegroup("Proyectos abiertos")
             {
@@ -17,8 +17,7 @@ pageextension 50300 ProyectosAbiertosAnd extends "O365 Activities"
                     ApplicationArea = All;
                 }
             }
-
-        }*/
+        }
     }
 
     actions
