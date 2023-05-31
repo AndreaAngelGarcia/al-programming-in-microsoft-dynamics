@@ -1,19 +1,19 @@
-pageextension 50331 NombreProveedorPageExt extends "Job Queue Entries"
+pageextension 50332 MovsProyectoAndrea extends "Job Ledger Entries"
 {
     layout
     {
-        /*addlast(content)
+        addafter("Document No.")
         {
             field(NombreProveedor; Rec.NombreProveedor)
             {
                 ApplicationArea = All;
             }
-        }*/
+        }
     }
 
     actions
     {
-        // Add changes to page actions here
+
     }
 
     var

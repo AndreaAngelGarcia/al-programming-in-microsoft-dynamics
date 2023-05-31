@@ -1,4 +1,4 @@
-pageextension 50300 ProyectosAbiertosAnd extends "O365 Activities"
+pageextension 50330 ProyectosAbiertosAnd extends "O365 Activities"
 {
     layout
     {
@@ -22,10 +22,8 @@ pageextension 50300 ProyectosAbiertosAnd extends "O365 Activities"
 
     actions
     {
-        // Add changes to page actions here
+
     }
-
-
 
     var
         myInt: Integer;

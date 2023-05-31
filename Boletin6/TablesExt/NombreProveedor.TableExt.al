@@ -1,4 +1,4 @@
-tableextension 50301 NombreProvMovs extends "Job Queue Entry"
+tableextension 50331 NombreProvMovs extends "Job Queue Entry"
 {
     fields
     {

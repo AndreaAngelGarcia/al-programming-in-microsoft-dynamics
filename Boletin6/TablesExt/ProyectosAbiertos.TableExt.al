@@ -1,4 +1,4 @@
-tableextension 50300 ProyectosAbiertosTableExtAnd extends "Activities Cue"
+tableextension 50330 ProyectosAbiertosTableExtAnd extends "Activities Cue"
 {
     fields
     {
